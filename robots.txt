@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kongo-na-biso.pages.dev/sitemap.xml
