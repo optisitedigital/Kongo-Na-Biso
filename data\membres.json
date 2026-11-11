@@ -1,0 +1,27 @@
+{
+  "_comment": "Équipe dirigeante de KONGO NA BISO — extraite de l'index.html d'origine. ordre = ordre d'affichage ; visible = false masque un membre sans le supprimer.",
+  "membres": [
+    { "nom": "NGOMA MASSUNDU PHILIPPE", "role": "PRÉSIDENT", "photo": "assets/img/chef1.jpg", "ordre": 1, "visible": true },
+    { "nom": "KINGO GBIAMBI CHRISTOPHER", "role": "VICE PRÉSIDENT", "photo": "assets/img/membre1.jpg", "ordre": 2, "visible": true },
+    { "nom": "MUKENDI KANKU SEDIM", "role": "SECRÉTAIRE GÉNÉRAL", "photo": "assets/img/membre2.jpg", "ordre": 3, "visible": true },
+    { "nom": "WAKIMESA KIMPILAMPILA GUY", "role": "S.G.A / MOBILISATION ET SENSIBILISATION", "photo": "assets/img/membre5.jpg", "ordre": 4, "visible": true },
+    { "nom": "KASSANGA CHALEMBA BRONDY", "role": "S.G.A / FINANCE ET DÉVELOPPEMENT", "photo": "assets/img/membre21.jpg", "ordre": 5, "visible": true },
+    { "nom": "THETIKA KABEYA GIOVANNI", "role": "S.G.A / PARTENARIAT STRATÉGIQUE", "photo": "assets/img/membre4.jpg", "ordre": 6, "visible": true },
+    { "nom": "MPIA EHOMBA AMOS", "role": "DIRECTEUR DE CABINET DU PRÉSIDENT", "photo": "assets/img/membre7.jpg", "ordre": 7, "visible": true },
+    { "nom": "NGANA YENGI MARIAM", "role": "TRÉSORIÈRE", "photo": "assets/img/membre8.jpg", "ordre": 8, "visible": true },
+    { "nom": "NGANDWE LUFUNGULO STANIS", "role": "SECRÉTAIRE ADMINISTRATIF", "photo": "assets/img/membre14.jpg", "ordre": 9, "visible": true },
+    { "nom": "MANGASA OWEN", "role": "RESPONSABLE DE LA COMMUNICATION", "photo": "assets/img/membre13.jpg", "ordre": 10, "visible": true },
+    { "nom": "FEZA MUSA JOSEPHINE", "role": "COMMUNICATRICE", "photo": "assets/img/membre12.jpg", "ordre": 11, "visible": true },
+    { "nom": "DANIELLA LIBWA ATANGO", "role": "COMMUNICATRICE", "photo": "assets/img/membre20.jpg", "ordre": 12, "visible": true },
+    { "nom": "MARDOCHÉE MULEKA KYANVUBU", "role": "CHARGÉ DES MÉDIAS ET RÉSEAUX SOCIAUX", "photo": "assets/img/membre11.jpg", "ordre": 13, "visible": true },
+    { "nom": "TSHIMANGA NGOMA EXAUCÉ", "role": "CHARGÉ DES PROJETS ET INNOVATIONS", "photo": "assets/img/membre6.jpg", "ordre": 14, "visible": true },
+    { "nom": "NGOMA MAKUALA OLIVIER", "role": "CHARGÉ DE LA SENSIBILISATION", "photo": "assets/img/membre10.jpg", "ordre": 15, "visible": true },
+    { "nom": "KINGAMBO KEVIN", "role": "CHARGÉ DE L’ORGANISATION ET LOGISTIQUE", "photo": "assets/img/membre15.jpg", "ordre": 16, "visible": true },
+    { "nom": "OKONGO MPALA BEVERME", "role": "CHARGÉ DE LA JEUNESSE, GENRE ET INCLUSION SOCIALE", "photo": "assets/img/membre16.jpg", "ordre": 17, "visible": true },
+    { "nom": "ILUNGA AARON", "role": "RESPONSABLE DE LA SÉCURITÉ", "photo": "assets/img/membre17.jpg", "ordre": 18, "visible": true },
+    { "nom": "NGONGO MANASSÉ", "role": "RESPONSABLE DE LA SÉCURITÉ", "photo": "assets/img/membre18.jpg", "ordre": 19, "visible": true },
+    { "nom": "SAMUEL MAKOFI", "role": "CONSEILLER", "photo": "assets/img/membre23.jpg", "ordre": 20, "visible": true },
+    { "nom": "DIKITELE VASSILIOU ANGELINA", "role": "CONSEILLÈRE", "photo": "assets/img/membre19.jpg", "ordre": 21, "visible": true },
+    { "nom": "NGOMA INAYINAYI LÉA", "role": "CONSULTANTE", "photo": "assets/img/membre27.jpg", "ordre": 22, "visible": true }
+  ]
+}
