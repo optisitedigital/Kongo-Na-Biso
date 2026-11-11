@@ -214,19 +214,26 @@ a:hover { color: var(--c-blue-dark); }
 .brand-name { text-transform: uppercase; }
 .brand-name .dot { color: var(--c-accent); }
 
-/* Burger : uniquement en mobile (≤ 767 px), à DROITE du logo */
+/* Burger : uniquement en mobile (≤ 767 px), à DROITE du logo.
+   Fond transparent (pas de boîte blanche), barres marine. */
 .burger {
   display: none;
   width: 46px;
   height: 46px;
   padding: 0;
   flex: none;
-  background: #fff;
-  border: 1px solid rgba(14, 36, 80, 0.25);
+  background: transparent;
+  border: 1px solid rgba(14, 36, 80, 0.45);
   border-radius: var(--radius-sm);
   cursor: pointer;
   align-items: center;
   justify-content: center;
+}
+/* Focus : anneau marine (pas de trait blanc au clic) */
+.burger:focus-visible {
+  outline: 3px solid var(--c-navy);
+  outline-offset: 2px;
+  box-shadow: none;
 }
 .burger span {
   display: block;
@@ -297,7 +304,7 @@ a:hover { color: var(--c-blue-dark); }
   .site-nav a::after { left: 0.5rem; right: 0.5rem; }
 }
 
-/* Tiroir mobile : ancré à DROITE, glisse vers la GAUCHE, voile derrière */
+/* Tiroir mobile : sort de la GAUCHE (le burger reste à droite), voile derrière */
 .nav-backdrop {
   display: none;
   position: fixed;
@@ -321,16 +328,16 @@ a:hover { color: var(--c-blue-dark); }
   .site-nav {
     position: fixed;
     top: 0;
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
     bottom: 0;
     width: min(84vw, 320px);
     margin-left: 0;
     padding-top: calc(var(--header-h) + 0.75rem);
     background: #fff;
-    border-left: 1px solid var(--c-border);
-    box-shadow: -24px 0 48px rgba(14, 36, 80, 0.25);
-    transform: translateX(100%); /* replié hors écran, à droite */
+    border-right: 1px solid var(--c-border);
+    box-shadow: 24px 0 48px rgba(14, 36, 80, 0.25);
+    transform: translateX(-100%); /* replié hors écran, à gauche */
     visibility: hidden;
     transition: transform 0.35s var(--ease-soft), visibility 0.35s;
     overflow-y: auto;
@@ -366,25 +373,25 @@ a:hover { color: var(--c-blue-dark); }
 }
 
 /* -------------------------------------------------------- 5. Hero
-   Démarre juste SOUS l'en-tête : la bannière est toujours entièrement
-   visible dès l'arrivée sur le site. Fond bleu ciel, texte marine.
-   Texte à gauche / bande image droite en desktop,
-   texte en haut / image pleine largeur en bas sur mobile. */
+   Image de bannière EN PLEIN ÉCRAN : elle couvre tout le hero,
+   le texte se pose par-dessus avec un voile blanc de lisibilité.
+   Démarre juste SOUS l'en-tête : rien n'est masqué à l'arrivée. */
 .hero {
   position: relative;
   margin-top: var(--header-h); /* jamais cachée par la navbar */
   min-height: calc(100vh - var(--header-h));
   min-height: calc(100dvh - var(--header-h));
+  display: flex;
+  align-items: center;
   background: var(--c-sky);
   color: var(--c-navy);
-  display: grid;
-  grid-template-rows: auto minmax(36vh, 1fr);
   overflow: hidden;
 }
 
 .hero-inner {
-  display: flex;
-  align-items: center;
+  position: relative;
+  z-index: 1; /* le texte passe AU-DESSUS de l'image */
+  width: 100%;
   padding-top: clamp(1.4rem, 4vh, 3rem);
   padding-bottom: clamp(1.4rem, 4vh, 2.4rem);
 }
@@ -416,11 +423,25 @@ a:hover { color: var(--c-blue-dark); }
 .hero .btn-ghost { color: var(--c-navy); border-color: var(--c-navy); }
 .hero .btn-ghost:hover { background: var(--c-navy); color: #fff; }
 
-/* Bloc image : occupe toute la hauteur restante, plein cadre */
+/* Bloc image : couvre TOUT le hero (plein écran, bord à bord) */
 .hero-media {
-  position: relative;
-  min-height: 0;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background: var(--c-sky);
+}
+/* Voile blanc de lisibilité : le texte reste net sur l'image (mobile) */
+.hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.94) 0%,
+    rgba(255, 255, 255, 0.82) 50%,
+    rgba(255, 255, 255, 0.3) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 .hero-media img {
   position: absolute;
@@ -434,15 +455,17 @@ a:hover { color: var(--c-blue-dark); }
 }
 
 @media (min-width: 900px) {
-  .hero {
-    grid-template-rows: 1fr;
-    grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
+  /* Texte à gauche : voile blanc horizontal sur la moitié gauche */
+  .hero-inner { padding-block: 2rem 3rem; }
+  .hero-media::after {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.94) 0%,
+      rgba(255, 255, 255, 0.84) 40%,
+      rgba(255, 255, 255, 0.28) 62%,
+      rgba(255, 255, 255, 0) 78%
+    );
   }
-  .hero-inner {
-    grid-column: 1;
-    padding-block: 2rem 3rem;
-  }
-  .hero-media { grid-column: 2; }
 }
 
 /* -------------------------------------------------------- 6. Sections */
