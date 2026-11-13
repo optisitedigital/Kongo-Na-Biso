@@ -4,42 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KONGO NA BISO - Officiel</title>
-  <meta name="description" content="Découvrez KONGO NA BISO, le mouvement pour la jeunesse et le développement.">
-  <meta name="google-site-verification" content="Lcbsuj1NJbcCSlOqM9GYI_Rh5IQ0i0ESeaaQIp2cb-8">
-  <link rel="canonical" href="https://kongo-na-biso.pages.dev/">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kongo-na-biso.pages.dev/">
-  <meta property="og:title" content="KONGO NA BISO - Officiel">
-  <meta property="og:description" content="Découvrez KONGO NA BISO, le mouvement pour la jeunesse et le développement.">
-  <meta property="og:image" content="https://kongo-na-biso.pages.dev/assets/img/og-image.jpg">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:site_name" content="KONGO NA BISO">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://kongo-na-biso.pages.dev/">
-  <meta name="twitter:title" content="KONGO NA BISO - Officiel">
-  <meta name="twitter:description" content="Découvrez KONGO NA BISO, le mouvement pour la jeunesse et le développement.">
-  <meta name="twitter:image" content="https://kongo-na-biso.pages.dev/assets/img/og-image.jpg">
-
+  <meta name="description" content="KONGO NA BISO : mouvement citoyen d'éveil patriotique et de justice sociale. Découvrez le mouvement, ses activités et rejoignez-nous.">
   <meta name="theme-color" content="#00a8e8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KONGO NA BISO - Officiel">
+  <meta property="og:description" content="Mouvement citoyen d'éveil patriotique et de justice sociale. Le Congo nous appartient. Il est temps, allons-y.">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="google-site-verification" content="Lcbsuj1NJbcCSlOqM9GYI_Rh5IQ0i0ESeaaQIp2cb-8">
+  <link rel="icon" href="logo.jpeg">
+  <link rel="apple-touch-icon" href="logo.jpeg">
 
-  <!-- Favicon -->
-  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <!-- L'affiche d'accueil est chargée en priorité : elle s'affiche dès l'arrivée -->
+  <link rel="preload" as="image" href="h%C3%A9ros-bg.jpg">
 
-  <!-- Polices : Montserrat (titres) + Open Sans (texte) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <!-- Ajout de la classe .js AVANT le premier rendu (évite un flash des animations) -->
   <script>document.documentElement.classList.add('js');</script>
-  <script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu principal</a>
@@ -47,15 +29,10 @@
   <!-- ================================================================ EN-TÊTE -->
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <button class="burger" id="burger-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation">
-        <span aria-hidden="true"></span>
-      </button>
-
       <a class="brand" href="#accueil">
-        <img src="assets/img/logo.webp" alt="Logo de KONGO NA BISO" width="40" height="40">
-        <span class="brand-name">Kongo Na Biso<span class="dot">.</span></span>
+        <img src="logo.jpeg" alt="Logo de KONGO NA BISO" width="44" height="44">
+        <span class="brand-name">Kongo Na Biso</span>
       </a>
-
       <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
         <ul>
           <li><a href="#accueil">Accueil</a></li>
@@ -66,6 +43,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <button class="burger" id="burger-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation"><span aria-hidden="true"></span></button>
     </div>
   </header>
   <div class="nav-backdrop" id="nav-backdrop"></div>
@@ -73,26 +51,15 @@
   <main id="contenu">
 
     <!-- ============================================================== ACCUEIL -->
+    <!-- L'affiche officielle contient déjà le titre et le slogan : on l'affiche en entier, sans la couper. -->
     <section class="hero" id="accueil" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1 id="hero-title" class="hero-anim d1">KONGO NA BISO</h1>
-          <p class="hero-sub hero-anim d2">Mouvement citoyen d'éveil patriotique et de justice sociale</p>
-          <p class="hero-slogan hero-anim d3">Le Congo nous appartient. Il est temps, allons-y.</p>
-          <div class="hero-cta hero-anim d4">
-            <a class="btn btn-primary" href="#adhesion">Rejoindre le Mouvement</a>
-            <a class="btn btn-ghost" href="#mouvement">Découvrir le mouvement</a>
-          </div>
-        </div>
+      <h1 id="hero-title" class="sr-only">KONGO NA BISO, mouvement citoyen d'éveil patriotique et de justice sociale</h1>
+      <div class="hero-frame">
+        <img class="hero-img" src="h%C3%A9ros-bg.jpg" alt="Affiche officielle de KONGO NA BISO : mouvement citoyen d'éveil patriotique et de justice sociale. Le Congo nous appartient. Il est temps, allons-y." fetchpriority="high" decoding="async">
       </div>
-
-      <div class="hero-media">
-        <picture>
-          <source srcset="assets/img/hero-bg.webp" type="image/webp">
-          <img src="assets/img/hero-bg.jpg"
-               alt="Affiche officielle de KONGO NA BISO : Kongo Na Biso, mouvement citoyen d'éveil patriotique et de justice sociale"
-               width="1120" height="960" fetchpriority="high" id="hero-img">
-        </picture>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="#adhesion">Rejoindre le Mouvement</a>
+        <a class="btn btn-ghost" href="#mouvement">Découvrir le mouvement</a>
       </div>
     </section>
 
@@ -106,19 +73,18 @@
 
         <div class="prose">
           <p class="reveal">Le mouvement citoyen <strong>KONGO NA BISO</strong> est né d’une volonté profonde de voir émerger une jeunesse congolaise consciente, engagée et actrice du changement.</p>
-
           <p class="reveal reveal-d1">Fondé en septembre 2025, KONGO NA BISO a été créé par <strong>NGOMA MASSUNDU PHILIPPE</strong>, citoyen congolais né à Kinshasa. Économiste de formation, il est licencié en économie et gestion de l’Université Protestante au Congo (UPC) depuis 2024.</p>
         </div>
 
         <div class="marquee reveal" data-marquee>
           <div class="marquee-track">
-            <figure><img src="assets/img/mouv1.webp" alt="Homme en t-shirt blanc Kongo Na Biso tenant un sac de produits emballés" width="720" height="1080" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/mouv2.webp" alt="Deux hommes en costume se serrant la main dans un bureau, noir et blanc" width="800" height="1067" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/mouv3.webp" alt="Bénévoles en gilets verts interviewés au micro, brandissant des pancartes contre les plastiques" width="724" height="1080" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/mouv4.webp" alt="Groupe de seize personnes posant en ligne devant un bâtiment jaune entouré d'arbres" width="800" height="533" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/mouv5.webp" alt="Jeune homme en costume prenant la parole devant le drapeau de la RDC" width="800" height="533" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/mouv6.webp" alt="Photo noir et blanc d'un groupe de dix-sept personnes posant devant un bâtiment" width="800" height="444" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/mouv7.webp" alt="Volontaires en gilets verts et casquettes alignés dans une rue devant un mur orange" width="800" height="536" loading="lazy" decoding="async"></figure>
+            <figure><img src="mouv1.jpg" alt="Homme en t-shirt blanc Kongo Na Biso tenant un sac de produits emballés" loading="lazy" decoding="async"></figure>
+            <figure><img src="mouv2.jpg" alt="Deux hommes en costume se serrant la main dans un bureau, noir et blanc" loading="lazy" decoding="async"></figure>
+            <figure><img src="mouv3.jpg" alt="Bénévoles en gilets verts interviewés au micro, brandissant des pancartes contre les plastiques" loading="lazy" decoding="async"></figure>
+            <figure><img src="mouv4.jpg" alt="Groupe de seize personnes posant en ligne devant un bâtiment jaune entouré d'arbres" loading="lazy" decoding="async"></figure>
+            <figure><img src="mouv5.jpg" alt="Jeune homme en costume prenant la parole devant le drapeau de la RDC" loading="lazy" decoding="async"></figure>
+            <figure><img src="mouv6.jpg" alt="Photo noir et blanc d'un groupe de dix-sept personnes posant devant un bâtiment" loading="lazy" decoding="async"></figure>
+            <figure><img src="mouv7.jpg" alt="Volontaires en gilets verts et casquettes alignés dans une rue devant un mur orange" loading="lazy" decoding="async"></figure>
           </div>
         </div>
         <div class="marquee-tools">
@@ -138,11 +104,8 @@
             <li>Renforcer la participation citoyenne et la cohésion sociale.</li>
             <li>Agir concrètement en faveur des personnes vulnérables.</li>
           </ul>
-
           <p class="reveal reveal-d1">KONGO NA BISO n’est pas un simple mouvement : c’est une dynamique citoyenne, une main tendue, et une force collective déterminée à bâtir un Congo plus juste, solidaire et prospère.</p>
-
           <p class="signature reveal reveal-d2">By NGOMA MASSUNDU PHILIPPE</p>
-
           <p class="closing-tag reveal reveal-d2">LE CONGO NOUS APPARTIENT.<br>IL EST TEMPS, ALLONS-Y.</p>
         </div>
       </div>
@@ -154,27 +117,23 @@
         <header class="section-head reveal">
           <p class="section-kicker">Activités</p>
           <h2 id="activites-title">Nos Activités</h2>
-          <p class="section-lead">« Retrouvez l'historique complet de nos actions, de nos activités les plus récentes aux plus anciennes. »</p>
+          <p class="section-lead">Retrouvez l'historique complet de nos actions, de nos activités les plus récentes aux plus anciennes.</p>
         </header>
 
         <div id="activities-grid" class="cards-grid" aria-live="polite"></div>
-        <div id="activities-status" class="feed-status" role="status">
-          <p>Chargement des publications…</p>
-        </div>
-        <noscript>
-          <div class="feed-status"><p>Activez JavaScript pour afficher la liste de nos publications.</p></div>
-        </noscript>
+        <div id="activities-status" class="feed-status" role="status"><p>Chargement des publications…</p></div>
+        <noscript><div class="feed-status"><p>Activez JavaScript pour afficher la liste de nos publications.</p></div></noscript>
 
-        <h3 class="reveal" style="margin-top: clamp(2rem, 5vw, 3rem);">Nos activités en images</h3>
+        <h3 class="reveal subhead">Nos activités en images</h3>
         <div class="marquee reveal" data-marquee>
           <div class="marquee-track">
-            <figure><img src="assets/img/photo2.webp" alt="Bénévoles en gilets verts et casquettes tenant des pancartes anti-plastiques dans une rue" width="800" height="495" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/photo3.webp" alt="Volontaires en gilets verts et casquettes avec pancartes sur une route bordée d'arbres" width="800" height="533" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/photo4.webp" alt="Photo noir et blanc d'un groupe de jeunes adultes posant devant un bâtiment" width="800" height="445" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/photo5.webp" alt="Quatre hommes en costumes sombres posant dans un bureau, photo en noir et blanc" width="800" height="1067" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/photo6.webp" alt="Huit personnes en tenue de soirée devant une banderole de logos lors d'une cérémonie" width="800" height="533" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/photo7.webp" alt="Groupe de jeunes et personnes âgées assises devant un bâtiment lors d'une rencontre" width="800" height="533" loading="lazy" decoding="async"></figure>
-            <figure><img src="assets/img/photo8.webp" alt="Grand groupe faisant le signe de victoire devant un bâtiment, en noir et blanc" width="800" height="481" loading="lazy" decoding="async"></figure>
+            <figure><img src="photo2.jpg" alt="Bénévoles en gilets verts et casquettes tenant des pancartes anti-plastiques dans une rue" loading="lazy" decoding="async"></figure>
+            <figure><img src="photo3.jpg" alt="Volontaires en gilets verts et casquettes avec pancartes sur une route bordée d'arbres" loading="lazy" decoding="async"></figure>
+            <figure><img src="photo4.jpg" alt="Photo noir et blanc d'un groupe de jeunes adultes posant devant un bâtiment" loading="lazy" decoding="async"></figure>
+            <figure><img src="photo5.jpg" alt="Quatre hommes en costumes sombres posant dans un bureau, photo en noir et blanc" loading="lazy" decoding="async"></figure>
+            <figure><img src="photo6.jpg" alt="Huit personnes en tenue de soirée devant une banderole de logos lors d'une cérémonie" loading="lazy" decoding="async"></figure>
+            <figure><img src="photo7.jpg" alt="Groupe de jeunes et personnes âgées assises devant un bâtiment lors d'une rencontre" loading="lazy" decoding="async"></figure>
+            <figure><img src="photo8.jpg" alt="Grand groupe faisant le signe de victoire devant un bâtiment, en noir et blanc" loading="lazy" decoding="async"></figure>
           </div>
         </div>
         <div class="marquee-tools">
@@ -189,22 +148,9 @@
         <header class="section-head reveal">
           <p class="section-kicker">Équipe</p>
           <h2 id="equipe-title">Équipe Dirigeante</h2>
-          <p class="team-count"><span id="team-count" data-count="0">—</span> <span class="team-count-label">membres</span></p>
+          <p class="team-count"><span id="team-count">0</span> membres</p>
         </header>
-
-        <div id="team-grid" class="team-grid" aria-live="polite">
-          <!-- Squelettes de chargement (remplacés par data/membres.json) -->
-          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-          <div class="skeleton-card" aria-hidden="true"><div class="skeleton-img"></div><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-        </div>
-        <div id="team-status" class="feed-status" role="status" hidden></div>
-        <noscript>
-          <div class="feed-status"><p>Activez JavaScript pour afficher l'équipe dirigeante. Vous pouvez aussi nous écrire à kongonabiso01@gmail.com.</p></div>
-        </noscript>
+        <div id="team-grid" class="team-grid"></div>
       </div>
     </section>
 
@@ -229,19 +175,16 @@
                 <input type="text" id="f-nom" name="nom" autocomplete="family-name" required aria-describedby="e-nom">
                 <p class="field-error" id="e-nom"></p>
               </div>
-
               <div class="field">
                 <label for="f-postnom">Postnom <span class="req" aria-hidden="true">*</span></label>
                 <input type="text" id="f-postnom" name="postnom" required aria-describedby="e-postnom">
                 <p class="field-error" id="e-postnom"></p>
               </div>
-
               <div class="field">
                 <label for="f-prenom">Prénom <span class="req" aria-hidden="true">*</span></label>
                 <input type="text" id="f-prenom" name="prenom" autocomplete="given-name" required aria-describedby="e-prenom">
                 <p class="field-error" id="e-prenom"></p>
               </div>
-
               <div class="field">
                 <label for="f-sexe">Sexe <span class="req" aria-hidden="true">*</span></label>
                 <select id="f-sexe" name="sexe" required aria-describedby="e-sexe">
@@ -251,26 +194,22 @@
                 </select>
                 <p class="field-error" id="e-sexe"></p>
               </div>
-
               <div class="field">
                 <label for="f-telephone">Téléphone <span class="req" aria-hidden="true">*</span></label>
                 <input type="tel" id="f-telephone" name="telephone" inputmode="tel" autocomplete="tel" required aria-describedby="h-telephone e-telephone">
                 <p class="hint" id="h-telephone">Format : +243XXXXXXXXX ou 0XXXXXXXXX</p>
                 <p class="field-error" id="e-telephone"></p>
               </div>
-
               <div class="field">
                 <label for="f-email">Email (facultatif)</label>
                 <input type="email" id="f-email" name="email" autocomplete="email" aria-describedby="e-email">
                 <p class="field-error" id="e-email"></p>
               </div>
-
               <div class="field span-2">
-                <label for="f-adresse">Adresse — commune / quartier <span class="req" aria-hidden="true">*</span></label>
+                <label for="f-adresse">Adresse : commune / quartier <span class="req" aria-hidden="true">*</span></label>
                 <input type="text" id="f-adresse" name="adresse" autocomplete="street-address" required aria-describedby="e-adresse">
                 <p class="field-error" id="e-adresse"></p>
               </div>
-
               <div class="field span-2">
                 <label for="f-type">Type de membre <span class="req" aria-hidden="true">*</span></label>
                 <select id="f-type" name="type_membre" required aria-describedby="e-type">
@@ -287,19 +226,15 @@
               <label for="f-website">Ne pas remplir</label>
               <input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
             </div>
-
-            <!-- Emplacement Cloudflare Turnstile (activé si TURNSTILE_SITE_KEY est renseigné) -->
             <div id="turnstile-slot"></div>
 
             <div class="consent">
               <input type="checkbox" id="f-consentement" name="consentement" required aria-describedby="e-consentement">
-              <label for="f-consentement">J’accepte que mes données soient enregistrées pour mon adhésion, conformément à la <a href="confidentialite.html" target="_blank" rel="noopener noreferrer">politique de confidentialité</a>. <span class="req" aria-hidden="true">*</span></label>
+              <label for="f-consentement">J’accepte que mes données soient enregistrées pour mon adhésion, conformément à la <a href="#confidentialite" data-open-privacy>politique de confidentialité</a>. <span class="req" aria-hidden="true">*</span></label>
             </div>
             <p class="field-error" id="e-consentement"></p>
 
-            <button type="submit" class="btn btn-primary" id="submit-btn" style="width: 100%; margin-top: 1rem;">
-              Envoyer mon adhésion
-            </button>
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Envoyer mon adhésion</button>
           </form>
 
           <div id="form-success" class="form-success" hidden>
@@ -310,6 +245,14 @@
             <p>Votre demande a bien été transmise à KONGO NA BISO.</p>
             <a class="btn btn-outline" href="#accueil">Retour à l'accueil</a>
           </div>
+
+          <details class="privacy" id="confidentialite">
+            <summary>Politique de confidentialité</summary>
+            <p><strong>Données collectées :</strong> nom, postnom, prénom, sexe, numéro de téléphone, email (facultatif), commune ou quartier, type de membre.</p>
+            <p><strong>Utilisation :</strong> enregistrer votre adhésion et vous contacter au sujet du mouvement. Vos données ne sont ni vendues ni cédées à des tiers.</p>
+            <p><strong>Accès :</strong> limité à quelques responsables de KONGO NA BISO, dans un fichier protégé.</p>
+            <p><strong>Vos droits :</strong> pour consulter, corriger ou faire supprimer vos données, écrivez à kongonabiso01@gmail.com.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -319,7 +262,7 @@
       <div class="container">
         <header class="section-head reveal">
           <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">À PROPOS &amp; CONTACT</h2>
+          <h2 id="contact-title">À propos et contact</h2>
         </header>
 
         <div class="contact-grid">
@@ -327,21 +270,13 @@
             <li>
               <a href="mailto:kongonabiso01@gmail.com">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
-                <span class="contact-body">
-                  <span class="contact-key">Gmail</span>
-                  <span class="contact-val">kongonabiso01@gmail.com</span>
-                  <small>Écrivez-nous, nous répondons dès que possible.</small>
-                </span>
+                <span class="contact-body"><span class="contact-key">Gmail</span><span class="contact-val">kongonabiso01@gmail.com</span><small>Écrivez-nous, nous répondons dès que possible.</small></span>
               </a>
             </li>
             <li>
               <a href="tel:+243975835730">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
-                <span class="contact-body">
-                  <span class="contact-key">Téléphone</span>
-                  <span class="contact-val">+243 975 835 730</span>
-                  <small>Appelez-nous ou envoyez-nous un WhatsApp.</small>
-                </span>
+                <span class="contact-body"><span class="contact-key">Téléphone</span><span class="contact-val">+243 975 835 730</span><small>Appelez-nous ou envoyez-nous un WhatsApp.</small></span>
               </a>
             </li>
           </ul>
@@ -350,31 +285,19 @@
             <li>
               <a href="https://www.instagram.com/kongonabiso.k.n.b/" target="_blank" rel="noopener noreferrer">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-                <span class="contact-body">
-                  <span class="contact-key">Instagram</span>
-                  <span class="contact-val">@kongonabiso.k.n.b</span>
-                  <small>Ouvrir le profil dans un nouvel onglet.</small>
-                </span>
+                <span class="contact-body"><span class="contact-key">Instagram</span><span class="contact-val">@kongonabiso.k.n.b</span><small>Ouvrir le profil dans un nouvel onglet.</small></span>
               </a>
             </li>
             <li>
               <a href="https://twitter.com/KongoNaBiso01" target="_blank" rel="noopener noreferrer">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4l7.2 9.3L4.4 20h2.1l5.6-5.7L16.8 20H20l-7.5-9.7L18.9 4h-2.1l-5.2 5.3L8.2 4H4Z"/></svg>
-                <span class="contact-body">
-                  <span class="contact-key">Twitter</span>
-                  <span class="contact-val">@KongoNaBiso01</span>
-                  <small>Ouvrir le profil dans un nouvel onglet.</small>
-                </span>
+                <span class="contact-body"><span class="contact-key">Twitter</span><span class="contact-val">@KongoNaBiso01</span><small>Ouvrir le profil dans un nouvel onglet.</small></span>
               </a>
             </li>
             <li>
               <a href="https://www.tiktok.com/@kongo.na.biso1" target="_blank" rel="noopener noreferrer">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3v10.5a4.5 4.5 0 1 1-4-4.5"/><path d="M15 6.5A5.5 5.5 0 0 0 20 12"/></svg>
-                <span class="contact-body">
-                  <span class="contact-key">TikTok</span>
-                  <span class="contact-val">@kongo.na.biso1</span>
-                  <small>Ouvrir le profil dans un nouvel onglet.</small>
-                </span>
+                <span class="contact-body"><span class="contact-key">TikTok</span><span class="contact-val">@kongo.na.biso1</span><small>Ouvrir le profil dans un nouvel onglet.</small></span>
               </a>
             </li>
           </ul>
@@ -385,7 +308,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
             Ouvrir WhatsApp
           </a>
-          <p class="section-lead" style="font-size: 0.9rem; margin: 0;">Réponse rapide par WhatsApp au +243 975 835 730.</p>
+          <p class="note">Réponse rapide par WhatsApp au +243 975 835 730.</p>
         </div>
       </div>
     </section>
@@ -400,11 +323,304 @@
           <li><a href="#mouvement">Le Mouvement</a></li>
           <li><a href="#activites">Activités</a></li>
           <li><a href="#adhesion">Adhésion</a></li>
-          <li><a href="confidentialite.html">Confidentialité</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <p class="footer-legal">Site officiel du mouvement citoyen KONGO NA BISO.</p>
     </div>
   </footer>
+
+  <script>
+  /* ==========================================================================
+     CONFIGURATION : seulement des adresses publiques, aucune clé secrète.
+     Plus tard, ces valeurs pourront venir des variables d'environnement
+     de l'hébergeur (étape de déploiement).
+     ========================================================================== */
+  var CONFIG = {
+    APPS_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbwl8oUjg80vxOfsodqskDtz_ef1-R1X6uEy81Pv2Ck-0p3ccmZ3bF9nEP7JBU-eeHo/exec',
+    ACTIVITIES_CSV_URL: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRnLmp-pFDfhUjb8aB129P4-uWx_V4I3mfC1EqT8Knlxbu1GCzqqhSoRtbatu182zqdsjQxoJIoyx5j/pub?output=csv',
+    TURNSTILE_SITE_KEY: '',     // laisser vide tant que Turnstile n'est pas configuré
+    NEWEST_AT_BOTTOM: true,     // true si les nouvelles publications sont ajoutées en bas de la Sheet
+    ACTIVITIES_PER_PAGE: 9
+  };
+
+  /* Équipe : une ligne par membre. Ajouter nom et role pour afficher la légende. */
+  var MEMBRES = [
+    { photo: 'chef1.jpg', nom: 'NGOMA MASSUNDU PHILIPPE', role: 'Fondateur' },
+    { photo: 'membre1.jpg' }, { photo: 'membre2.jpg' }, { photo: 'membre3.jpg' }, { photo: 'membre4.jpg' },
+    { photo: 'membre5.jpg' }, { photo: 'membre6.jpg' }, { photo: 'membre7.jpg' }, { photo: 'membre8.jpg' },
+    { photo: 'membre9.jpg' }, { photo: 'membre10.jpg' }, { photo: 'membre11.jpg' }, { photo: 'membre12.jpg' },
+    { photo: 'membre13.jpg' }, { photo: 'membre14.jpg' }, { photo: 'membre15.jpg' }, { photo: 'membre16.jpg' },
+    { photo: 'membre17.jpg' }, { photo: 'membre18.jpg' }, { photo: 'membre19.jpg' }, { photo: 'membre20.jpg' },
+    { photo: 'membre21.jpg' }, { photo: 'membre22.jpg' }, { photo: 'membre23.jpg' }, { photo: 'membre27.jpg' },
+    { photo: 'membrex.jpg' }
+  ];
+
+  (function () {
+    'use strict';
+    var $ = function (s, c) { return (c || document).querySelector(s); };
+    var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function make(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+    /* ---------- Apparition au scroll ---------- */
+    var io = ('IntersectionObserver' in window) ? new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' }) : null;
+    function watchAll(root) {
+      $$('.reveal:not(.is-visible)', root).forEach(function (n) { if (!io || reduce) n.classList.add('is-visible'); else io.observe(n); });
+    }
+
+    /* ---------- Menu mobile ---------- */
+    var header = $('#site-header'), burger = $('#burger-btn'), nav = $('#site-nav'), backdrop = $('#nav-backdrop');
+    function setNav(open) {
+      nav.classList.toggle('is-open', open);
+      backdrop.classList.toggle('is-open', open);
+      document.body.classList.toggle('nav-open', open);
+      burger.setAttribute('aria-expanded', String(open));
+      burger.setAttribute('aria-label', open ? 'Fermer le menu de navigation' : 'Ouvrir le menu de navigation');
+    }
+    burger.addEventListener('click', function () { setNav(!nav.classList.contains('is-open')); });
+    backdrop.addEventListener('click', function () { setNav(false); });
+    $$('a', nav).forEach(function (a) { a.addEventListener('click', function () { setNav(false); }); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('is-open')) { setNav(false); burger.focus(); } });
+    window.matchMedia('(min-width: 900px)').addEventListener('change', function (m) { if (m.matches) setNav(false); });
+    function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 24); }
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+    if (io) {
+      var links = $$('a[href^="#"]', nav);
+      var spy = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          links.forEach(function (a) { if (a.getAttribute('href') === '#' + e.target.id) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      $$('main section[id]').forEach(function (s) { spy.observe(s); });
+    }
+
+    /* ---------- Texte qui s'écrit ---------- */
+    $$('[data-typewriter]').forEach(function (p) {
+      var full = p.textContent.trim();
+      p.setAttribute('aria-label', full);
+      if (reduce || !io) return;
+      p.style.minHeight = p.offsetHeight + 'px';
+      p.textContent = '';
+      var t = new IntersectionObserver(function (es, obs) {
+        if (!es[0].isIntersecting) return;
+        obs.disconnect();
+        var i = 0; p.classList.add('typing');
+        (function step() { p.textContent = full.slice(0, ++i); if (i < full.length) setTimeout(step, 26); else p.classList.remove('typing'); })();
+      }, { threshold: 0.6 });
+      t.observe(p);
+    });
+
+    /* ---------- Défilement de photos ---------- */
+    $$('[data-marquee]').forEach(function (m) {
+      var track = $('.marquee-track', m), n = track.children.length;
+      if (!reduce) {
+        $$('figure', track).forEach(function (f) {
+          var c = f.cloneNode(true); c.setAttribute('aria-hidden', 'true');
+          $$('img', c).forEach(function (im) { im.alt = ''; });
+          track.appendChild(c);
+        });
+        track.style.setProperty('--dur', (n * 7) + 's');
+      }
+      var btn = m.nextElementSibling && $('[data-marquee-toggle]', m.nextElementSibling);
+      if (btn) btn.addEventListener('click', function () {
+        var paused = m.classList.toggle('is-paused');
+        btn.setAttribute('aria-pressed', String(paused));
+        btn.textContent = paused ? 'Reprendre le défilement' : 'Arrêter le défilement';
+      });
+    });
+
+    /* ---------- Équipe ---------- */
+    (function () {
+      var grid = $('#team-grid');
+      MEMBRES.forEach(function (m, i) {
+        var card = make('article', 'team-card reveal');
+        card.style.setProperty('--i', String(i % 6));
+        var ph = make('div', 'team-photo');
+        var img = new Image();
+        img.src = m.photo; img.loading = 'lazy'; img.decoding = 'async';
+        img.alt = m.nom ? 'Portrait de ' + m.nom : 'Membre de l’équipe dirigeante';
+        img.addEventListener('error', function () { card.remove(); });
+        ph.appendChild(img); card.appendChild(ph);
+        if (m.nom) { card.appendChild(make('h3', '', m.nom)); if (m.role) card.appendChild(make('p', '', m.role)); }
+        grid.appendChild(card);
+      });
+      $('#team-count').textContent = MEMBRES.length;
+      watchAll(grid);
+    })();
+
+    /* ---------- Activités (Google Sheet publiée en CSV) ---------- */
+    function parseCSV(t) {
+      var rows = [], r = [], c = '', q = false, i, ch;
+      for (i = 0; i < t.length; i++) {
+        ch = t[i];
+        if (q) { if (ch === '"') { if (t[i + 1] === '"') { c += '"'; i++; } else q = false; } else c += ch; }
+        else if (ch === '"') q = true;
+        else if (ch === ',') { r.push(c); c = ''; }
+        else if (ch === '\n' || ch === '\r') { if (ch === '\r' && t[i + 1] === '\n') i++; r.push(c); rows.push(r); r = []; c = ''; }
+        else c += ch;
+      }
+      if (c || r.length) { r.push(c); rows.push(r); }
+      return rows;
+    }
+    var ALLOWED = /^https:\/\/((www|web|m)\.)?(instagram|facebook)\.com\//i;
+    function buildActivities(csv) {
+      var cols = { instagram: [], facebook: [] };
+      parseCSV(csv).slice(1).forEach(function (r) {
+        r.forEach(function (cell) {
+          var url = String(cell || '').trim();
+          if (ALLOWED.test(url)) cols[/instagram/i.test(url) ? 'instagram' : 'facebook'].push(url);
+        });
+      });
+      if (CONFIG.NEWEST_AT_BOTTOM) { cols.instagram.reverse(); cols.facebook.reverse(); }
+      var out = [], max = Math.max(cols.instagram.length, cols.facebook.length), k;
+      for (k = 0; k < max; k++) {
+        if (cols.instagram[k]) out.push({ kind: 'instagram', url: cols.instagram[k] });
+        if (cols.facebook[k]) out.push({ kind: 'facebook', url: cols.facebook[k] });
+      }
+      return out;
+    }
+    function renderActivities(items) {
+      var grid = $('#activities-grid'), shown = 0;
+      var more = make('div', 'more-wrap'), btn = make('button', 'btn btn-outline', 'Voir plus de publications');
+      btn.type = 'button'; more.appendChild(btn); grid.after(more);
+      function showNext() {
+        items.slice(shown, shown + CONFIG.ACTIVITIES_PER_PAGE).forEach(function (it, i) {
+          var label = it.kind === 'instagram' ? 'Instagram' : 'Facebook';
+          var card = make('article', 'card reveal' + (it.kind === 'facebook' ? ' fb' : ''));
+          card.style.setProperty('--i', String(i % 3));
+          card.appendChild(make('h3', '', 'Publication ' + label));
+          card.appendChild(make('p', '', 'Retrouvez cette activité de KONGO NA BISO sur ' + label + '.'));
+          var a = make('a', 'btn btn-outline btn-sm', 'Voir la publication');
+          a.href = it.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+          a.setAttribute('aria-label', 'Voir la publication ' + label + ' (nouvel onglet)');
+          card.appendChild(a); grid.appendChild(card);
+        });
+        shown = Math.min(items.length, shown + CONFIG.ACTIVITIES_PER_PAGE);
+        watchAll(grid); more.hidden = shown >= items.length;
+      }
+      btn.addEventListener('click', showNext);
+      $('#activities-status').hidden = true;
+      showNext();
+    }
+    (function () {
+      var key = 'knb_activities', cached = null;
+      try { var c = JSON.parse(sessionStorage.getItem(key) || 'null'); if (c && Date.now() - c.t < 600000) cached = c.v; } catch (e) { /* ignore */ }
+      var p = cached ? Promise.resolve(cached) : fetch(CONFIG.ACTIVITIES_CSV_URL).then(function (r) { if (!r.ok) throw new Error('http'); return r.text(); });
+      p.then(function (text) {
+        try { sessionStorage.setItem(key, JSON.stringify({ t: Date.now(), v: text })); } catch (e) { /* ignore */ }
+        var items = buildActivities(text);
+        if (!items.length) throw new Error('vide');
+        renderActivities(items);
+      }).catch(function () {
+        $('#activities-status').textContent = 'Les publications ne sont pas disponibles pour le moment. Suivez-nous sur Instagram : @kongonabiso.k.n.b.';
+      });
+    })();
+
+    /* ---------- Politique de confidentialité ---------- */
+    $$('[data-open-privacy]').forEach(function (a) {
+      a.addEventListener('click', function () { var d = $('#confidentialite'); d.open = true; });
+    });
+
+    /* ---------- Formulaire d'adhésion ---------- */
+    var form = $('#adhesion-form'), loadedAt = Date.now(), turnstileToken = '', sending = false;
+    var FIELDS = [
+      ['nom', 'f-nom', 'e-nom'], ['postnom', 'f-postnom', 'e-postnom'], ['prenom', 'f-prenom', 'e-prenom'],
+      ['sexe', 'f-sexe', 'e-sexe'], ['telephone', 'f-telephone', 'e-telephone'], ['email', 'f-email', 'e-email'],
+      ['adresse', 'f-adresse', 'e-adresse'], ['type_membre', 'f-type', 'e-type'], ['consentement', 'f-consentement', 'e-consentement']
+    ];
+    function validPhone(v) {
+      var s = v.replace(/[\s().-]/g, '');
+      return /^(\+|00)?243\d{9}$/.test(s) || /^0\d{9}$/.test(s) || /^\d{9}$/.test(s) || /^\+\d{8,15}$/.test(s);
+    }
+    function checkField(name, el) {
+      var v = el.type === 'checkbox' ? el.checked : el.value.trim();
+      switch (name) {
+        case 'nom': case 'postnom': case 'prenom': return /^[\p{L}][\p{L}' .-]+$/u.test(v) && v.length <= 80 ? '' : 'Saisissez au moins 2 lettres.';
+        case 'sexe': return v ? '' : 'Choisissez votre sexe.';
+        case 'telephone': return validPhone(v) ? '' : 'Numéro invalide. Exemple : +243990000000 ou 0990000000.';
+        case 'email': return !v || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? '' : 'Adresse email invalide.';
+        case 'adresse': return v.length >= 3 ? '' : 'Indiquez votre commune ou quartier.';
+        case 'type_membre': return v ? '' : 'Choisissez un type de membre.';
+        case 'consentement': return v ? '' : 'Vous devez accepter pour adhérer.';
+      }
+      return '';
+    }
+    function showFieldError(f, msg) {
+      var el = document.getElementById(f[1]);
+      document.getElementById(f[2]).textContent = msg;
+      if (msg) el.setAttribute('aria-invalid', 'true'); else el.removeAttribute('aria-invalid');
+    }
+    function validateAll() {
+      var firstBad = null;
+      FIELDS.forEach(function (f) {
+        var msg = checkField(f[0], document.getElementById(f[1]));
+        showFieldError(f, msg);
+        if (msg && !firstBad) firstBad = document.getElementById(f[1]);
+      });
+      if (!firstBad && CONFIG.TURNSTILE_SITE_KEY && !turnstileToken) return $('#turnstile-slot');
+      return firstBad;
+    }
+    function setStatus(msg) { var s = $('#form-status'); s.textContent = msg; s.hidden = !msg; }
+
+    FIELDS.forEach(function (f) {
+      var el = document.getElementById(f[1]);
+      el.addEventListener('blur', function () { if (el.value || el.type === 'checkbox') showFieldError(f, checkField(f[0], el)); });
+      el.addEventListener('input', function () { if (el.hasAttribute('aria-invalid')) showFieldError(f, checkField(f[0], el)); });
+    });
+
+    if (CONFIG.TURNSTILE_SITE_KEY) {
+      var s = document.createElement('script');
+      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'; s.async = true;
+      s.onload = function () {
+        window.turnstile.render('#turnstile-slot', {
+          sitekey: CONFIG.TURNSTILE_SITE_KEY,
+          callback: function (t) { turnstileToken = t; },
+          'expired-callback': function () { turnstileToken = ''; }
+        });
+      };
+      document.head.appendChild(s);
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (sending) return;
+      setStatus('');
+      var bad = validateAll();
+      if (bad) {
+        if (bad.id === 'turnstile-slot') setStatus('Validez la vérification anti-robot avant d’envoyer.'); else bad.focus();
+        return;
+      }
+      var btn = $('#submit-btn'), label = btn.textContent;
+      sending = true; btn.disabled = true; btn.textContent = 'Envoi en cours…';
+      var payload = {
+        nom: $('#f-nom').value, postnom: $('#f-postnom').value, prenom: $('#f-prenom').value,
+        sexe: $('#f-sexe').value, telephone: $('#f-telephone').value, email: $('#f-email').value,
+        adresse: $('#f-adresse').value, type_membre: $('#f-type').value, consentement: 'oui',
+        website: $('#f-website').value, t: loadedAt, turnstile: turnstileToken
+      };
+      var ctl = new AbortController(), timer = setTimeout(function () { ctl.abort(); }, 20000);
+      fetch(CONFIG.APPS_SCRIPT_URL, {
+        method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload), signal: ctl.signal
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (out) {
+          if (out && out.ok) {
+            form.hidden = true; $('#form-status').hidden = true;
+            var ok = $('#form-success'); ok.hidden = false;
+            var h = $('h3', ok); h.tabIndex = -1; h.focus();
+          } else setStatus((out && out.error) || 'Votre adhésion n’a pas pu être enregistrée. Réessayez.');
+        })
+        .catch(function () { setStatus('Connexion impossible. Vérifiez votre réseau puis réessayez.'); })
+        .then(function () { clearTimeout(timer); sending = false; btn.disabled = false; btn.textContent = label; });
+    });
+
+    watchAll(document);
+  })();
+  </script>
 </body>
 </html>
