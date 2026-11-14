@@ -67,13 +67,12 @@
     <section class="section" id="mouvement" aria-labelledby="mouvement-title">
       <div class="container">
         <header class="section-head reveal">
-          <p class="section-kicker">Le Mouvement</p>
           <h2 id="mouvement-title">Histoire du mouvement</h2>
         </header>
 
         <div class="prose">
-          <p class="reveal">Le mouvement citoyen <strong>KONGO NA BISO</strong> est né d’une volonté profonde de voir émerger une jeunesse congolaise consciente, engagée et actrice du changement.</p>
-          <p class="reveal reveal-d1">Fondé en septembre 2025, KONGO NA BISO a été créé par <strong>NGOMA MASSUNDU PHILIPPE</strong>, citoyen congolais né à Kinshasa. Économiste de formation, il est licencié en économie et gestion de l’Université Protestante au Congo (UPC) depuis 2024.</p>
+          <p class="reveal" data-typewriter>Le mouvement citoyen <strong>KONGO NA BISO</strong> est né d’une volonté profonde de voir émerger une jeunesse congolaise consciente, engagée et actrice du changement.</p>
+          <p class="reveal reveal-d1" data-typewriter>Fondé en septembre 2025, KONGO NA BISO a été créé par <strong>NGOMA MASSUNDU PHILIPPE</strong>, citoyen congolais né à Kinshasa. Économiste de formation, il est licencié en économie et gestion de l’Université Protestante au Congo (UPC) depuis 2024.</p>
         </div>
 
         <div class="marquee reveal" data-marquee>
@@ -104,7 +103,7 @@
             <li>Renforcer la participation citoyenne et la cohésion sociale.</li>
             <li>Agir concrètement en faveur des personnes vulnérables.</li>
           </ul>
-          <p class="reveal reveal-d1">KONGO NA BISO n’est pas un simple mouvement : c’est une dynamique citoyenne, une main tendue, et une force collective déterminée à bâtir un Congo plus juste, solidaire et prospère.</p>
+          <p class="reveal reveal-d1" data-typewriter>KONGO NA BISO n’est pas un simple mouvement : c’est une dynamique citoyenne, une main tendue, et une force collective déterminée à bâtir un Congo plus juste, solidaire et prospère.</p>
           <p class="signature reveal reveal-d2">By NGOMA MASSUNDU PHILIPPE</p>
           <p class="closing-tag reveal reveal-d2">LE CONGO NOUS APPARTIENT.<br>IL EST TEMPS, ALLONS-Y.</p>
         </div>
@@ -115,14 +114,14 @@
     <section class="section section-alt" id="activites" aria-labelledby="activites-title">
       <div class="container">
         <header class="section-head reveal">
-          <p class="section-kicker">Activités</p>
           <h2 id="activites-title">Nos Activités</h2>
           <p class="section-lead">Retrouvez l'historique complet de nos actions, de nos activités les plus récentes aux plus anciennes.</p>
         </header>
 
-        <div id="activities-grid" class="cards-grid" aria-live="polite"></div>
+        <div id="activities-grid" class="act-row" aria-live="polite"></div>
         <div id="activities-status" class="feed-status" role="status"><p>Chargement des publications…</p></div>
-        <noscript><div class="feed-status"><p>Activez JavaScript pour afficher la liste de nos publications.</p></div></noscript>
+        <div class="more-wrap"><button type="button" id="activities-all" class="btn btn-primary" hidden>Voir toutes les publications</button></div>
+        <noscript><div class="feed-status"><p>Activez JavaScript pour afficher nos vidéos. Retrouvez-nous sur Instagram : @kongonabiso.k.n.b.</p></div></noscript>
 
         <h3 class="reveal subhead">Nos activités en images</h3>
         <div class="marquee reveal" data-marquee>
@@ -146,11 +145,11 @@
     <section class="section" id="equipe" aria-labelledby="equipe-title">
       <div class="container">
         <header class="section-head reveal">
-          <p class="section-kicker">Équipe</p>
           <h2 id="equipe-title">Équipe Dirigeante</h2>
           <p class="team-count"><span id="team-count">0</span> membres</p>
         </header>
         <div id="team-grid" class="team-grid"></div>
+        <div class="more-wrap"><button type="button" id="team-all" class="btn btn-primary">Voir tous les membres</button></div>
       </div>
     </section>
 
@@ -158,7 +157,6 @@
     <section class="section section-alt" id="adhesion" aria-labelledby="adhesion-title">
       <div class="container">
         <header class="section-head center reveal">
-          <p class="section-kicker">Adhésion</p>
           <h2 id="adhesion-title">Rejoindre KNB</h2>
           <p class="section-lead">Remplissez ce formulaire pour adhérer au mouvement citoyen KONGO NA BISO.</p>
         </header>
@@ -261,7 +259,6 @@
     <section class="section" id="contact" aria-labelledby="contact-title">
       <div class="container">
         <header class="section-head reveal">
-          <p class="section-kicker">Contact</p>
           <h2 id="contact-title">À propos et contact</h2>
         </header>
 
@@ -330,6 +327,23 @@
     </div>
   </footer>
 
+  <!-- ===================================================== PANNEAUX PLEIN ÉCRAN -->
+  <div class="panel" id="panel-equipe" data-hash="tous-les-membres" role="dialog" aria-modal="true" aria-labelledby="panel-equipe-title" hidden>
+    <div class="panel-bar">
+      <button class="panel-back" type="button" data-panel-close><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Retour</button>
+      <h2 id="panel-equipe-title">Tous les membres</h2>
+    </div>
+    <div class="panel-body" id="panel-equipe-body"></div>
+  </div>
+
+  <div class="panel" id="panel-activites" data-hash="toutes-les-publications" role="dialog" aria-modal="true" aria-labelledby="panel-activites-title" hidden>
+    <div class="panel-bar">
+      <button class="panel-back" type="button" data-panel-close><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Retour</button>
+      <h2 id="panel-activites-title">Toutes les publications</h2>
+    </div>
+    <div class="panel-body"><div class="act-grid" id="activities-all-grid"></div></div>
+  </div>
+
   <script>
   /* ==========================================================================
      CONFIGURATION : seulement des adresses publiques, aucune clé secrète.
@@ -344,16 +358,22 @@
     ACTIVITIES_PER_PAGE: 9
   };
 
-  /* Équipe : une ligne par membre. Ajouter nom et role pour afficher la légende. */
-  var MEMBRES = [
-    { photo: 'chef1.jpg', nom: 'NGOMA MASSUNDU PHILIPPE', role: 'Fondateur' },
-    { photo: 'membre1.jpg' }, { photo: 'membre2.jpg' }, { photo: 'membre3.jpg' }, { photo: 'membre4.jpg' },
-    { photo: 'membre5.jpg' }, { photo: 'membre6.jpg' }, { photo: 'membre7.jpg' }, { photo: 'membre8.jpg' },
-    { photo: 'membre9.jpg' }, { photo: 'membre10.jpg' }, { photo: 'membre11.jpg' }, { photo: 'membre12.jpg' },
-    { photo: 'membre13.jpg' }, { photo: 'membre14.jpg' }, { photo: 'membre15.jpg' }, { photo: 'membre16.jpg' },
-    { photo: 'membre17.jpg' }, { photo: 'membre18.jpg' }, { photo: 'membre19.jpg' }, { photo: 'membre20.jpg' },
-    { photo: 'membre21.jpg' }, { photo: 'membre22.jpg' }, { photo: 'membre23.jpg' }, { photo: 'membre27.jpg' },
-    { photo: 'membrex.jpg' }
+  /* Équipe : groupes affichés dans cet ordre. Le premier groupe ("Présidence") s'affiche
+     directement sur la page ; les autres sont dans le panneau "Voir tous les membres".
+     Pour chaque membre : photo, nom, role (sa fonction). Nom et role sont facultatifs. */
+  var EQUIPE = [
+    { groupe: 'Présidence', membres: [
+      { photo: 'chef1.jpg', nom: 'NGOMA MASSUNDU PHILIPPE', role: 'Fondateur' }
+    ] },
+    { groupe: 'Membres', membres: [
+      { photo: 'membre1.jpg' }, { photo: 'membre2.jpg' }, { photo: 'membre3.jpg' }, { photo: 'membre4.jpg' },
+      { photo: 'membre5.jpg' }, { photo: 'membre6.jpg' }, { photo: 'membre7.jpg' }, { photo: 'membre8.jpg' },
+      { photo: 'membre9.jpg' }, { photo: 'membre10.jpg' }, { photo: 'membre11.jpg' }, { photo: 'membre12.jpg' },
+      { photo: 'membre13.jpg' }, { photo: 'membre14.jpg' }, { photo: 'membre15.jpg' }, { photo: 'membre16.jpg' },
+      { photo: 'membre17.jpg' }, { photo: 'membre18.jpg' }, { photo: 'membre19.jpg' }, { photo: 'membre20.jpg' },
+      { photo: 'membre21.jpg' }, { photo: 'membre22.jpg' }, { photo: 'membre23.jpg' }, { photo: 'membre27.jpg' },
+      { photo: 'membrex.jpg' }
+    ] }
   ];
 
   (function () {
@@ -371,8 +391,9 @@
       $$('.reveal:not(.is-visible)', root).forEach(function (n) { if (!io || reduce) n.classList.add('is-visible'); else io.observe(n); });
     }
 
-    /* ---------- Menu mobile ---------- */
+    /* ---------- Menu mobile (le panneau sort par la GAUCHE) ---------- */
     var header = $('#site-header'), burger = $('#burger-btn'), nav = $('#site-nav'), backdrop = $('#nav-backdrop');
+    var openPanel = null, panelOpener = null;
     function setNav(open) {
       nav.classList.toggle('is-open', open);
       backdrop.classList.toggle('is-open', open);
@@ -382,9 +403,30 @@
     }
     burger.addEventListener('click', function () { setNav(!nav.classList.contains('is-open')); });
     backdrop.addEventListener('click', function () { setNav(false); });
-    $$('a', nav).forEach(function (a) { a.addEventListener('click', function () { setNav(false); }); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('is-open')) { setNav(false); burger.focus(); } });
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      if (openPanel) { requestClose(); return; }
+      if (nav.classList.contains('is-open')) { setNav(false); burger.focus(); }
+    });
     window.matchMedia('(min-width: 900px)').addEventListener('change', function (m) { if (m.matches) setNav(false); });
+
+    /* Liens internes (#mouvement, #adhesion…) : on ferme le menu, puis on défile. */
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+      if (!a) return;
+      var id = a.getAttribute('href').slice(1);
+      var target = id && id !== 'confidentialite' ? document.getElementById(id) : null;
+      if (!target) return;
+      e.preventDefault();
+      var wasOpen = nav.classList.contains('is-open');
+      setNav(false);
+      var go = function () {
+        target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+        if (history.replaceState) history.replaceState(history.state, '', '#' + id);
+      };
+      if (wasOpen) setTimeout(go, 80); else go();
+    });
+
     function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 24); }
     window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
@@ -399,21 +441,44 @@
       $$('main section[id]').forEach(function (s) { spy.observe(s); });
     }
 
-    /* ---------- Texte qui s'écrit ---------- */
-    $$('[data-typewriter]').forEach(function (p) {
-      var full = p.textContent.trim();
-      p.setAttribute('aria-label', full);
-      if (reduce || !io) return;
+    /* ---------- Texte qui s'écrit pendant la lecture ---------- */
+    var typeChain = Promise.resolve();
+    function prepType(p) {
+      var vis = document.createElement('span'), sr = document.createElement('span');
+      vis.setAttribute('aria-hidden', 'true'); sr.className = 'sr-only';
       p.style.minHeight = p.offsetHeight + 'px';
-      p.textContent = '';
-      var t = new IntersectionObserver(function (es, obs) {
-        if (!es[0].isIntersecting) return;
-        obs.disconnect();
-        var i = 0; p.classList.add('typing');
-        (function step() { p.textContent = full.slice(0, ++i); if (i < full.length) setTimeout(step, 26); else p.classList.remove('typing'); })();
-      }, { threshold: 0.6 });
-      t.observe(p);
-    });
+      vis.innerHTML = p.innerHTML;                       // contenu statique de la page
+      while (p.firstChild) sr.appendChild(p.firstChild); // copie lisible par les lecteurs d'écran
+      p.appendChild(sr); p.appendChild(vis);
+      var walker = document.createTreeWalker(vis, NodeFilter.SHOW_TEXT), nodes = [], total = 0, n;
+      while ((n = walker.nextNode())) { nodes.push({ n: n, t: n.nodeValue }); total += n.nodeValue.length; n.nodeValue = ''; }
+      return { p: p, nodes: nodes, total: total };
+    }
+    function showChars(o, count) {
+      var left = count;
+      o.nodes.forEach(function (x) { var k = Math.max(0, Math.min(x.t.length, left)); x.n.nodeValue = x.t.slice(0, k); left -= k; });
+    }
+    function typeIt(o) {
+      return new Promise(function (resolve) {
+        var dur = Math.min(3600, o.total * 16), ticks = Math.max(1, Math.round(dur / 30)), step = Math.max(1, Math.ceil(o.total / ticks)), i = 0;
+        o.p.classList.add('typing');
+        (function tick() {
+          i = Math.min(o.total, i + step); showChars(o, i);
+          if (i < o.total) setTimeout(tick, 30); else { o.p.classList.remove('typing'); resolve(); }
+        })();
+      });
+    }
+    if (io && !reduce) {
+      $$('[data-typewriter]').forEach(function (p) {
+        var o = prepType(p);
+        var t = new IntersectionObserver(function (es, obs) {
+          if (!es[0].isIntersecting) return;
+          obs.disconnect();
+          typeChain = typeChain.then(function () { return typeIt(o); });
+        }, { threshold: 0.4 });
+        t.observe(p);
+      });
+    }
 
     /* ---------- Défilement de photos ---------- */
     $$('[data-marquee]').forEach(function (m) {
@@ -434,26 +499,75 @@
       });
     });
 
+    /* ---------- Panneaux plein écran (bouton, entrer, retour) ---------- */
+    function doClose() {
+      if (!openPanel) return;
+      var p = openPanel; openPanel = null;
+      p.classList.remove('is-open');
+      setTimeout(function () { p.hidden = true; }, 420);
+      document.body.classList.remove('panel-open');
+      $$('.site-header, main, footer').forEach(function (n) { n.inert = false; });
+      if (panelOpener) panelOpener.focus();
+    }
+    function requestClose() {
+      if (history.state && history.state.panel) history.back(); else doClose();
+    }
+    function openP(id, btn) {
+      var p = document.getElementById(id);
+      if (!p || openPanel === p) return;
+      if (p._build) { p._build(); p._build = null; }
+      panelOpener = btn; openPanel = p;
+      p.hidden = false; void p.offsetWidth; p.classList.add('is-open');
+      document.body.classList.add('panel-open');
+      $$('.site-header, main, footer').forEach(function (n) { n.inert = true; });
+      history.pushState({ panel: id }, '', '#' + p.getAttribute('data-hash'));
+      $('.panel-body', p).scrollTop = 0;
+      $('.panel-back', p).focus();
+    }
+    window.addEventListener('popstate', function () { if (openPanel && !(history.state && history.state.panel)) doClose(); });
+    $$('[data-panel-close]').forEach(function (b) { b.addEventListener('click', requestClose); });
+
     /* ---------- Équipe ---------- */
+    function memberCard(m) {
+      var card = make('article', 'team-card'), ph = make('div', 'team-photo'), img = new Image();
+      img.src = m.photo; img.loading = 'lazy'; img.decoding = 'async';
+      img.alt = m.nom ? 'Portrait de ' + m.nom : 'Membre de l’équipe dirigeante';
+      img.addEventListener('error', function () { card.remove(); });
+      ph.appendChild(img); card.appendChild(ph);
+      if (m.nom || m.role) {
+        var cap = make('div', 'team-cap');
+        if (m.nom) cap.appendChild(make('h3', '', m.nom));
+        if (m.role) cap.appendChild(make('p', '', m.role));
+        card.appendChild(cap);
+      }
+      return card;
+    }
     (function () {
+      var total = 0;
+      EQUIPE.forEach(function (g) { total += g.membres.length; });
+      $('#team-count').textContent = total;
       var grid = $('#team-grid');
-      MEMBRES.forEach(function (m, i) {
-        var card = make('article', 'team-card reveal');
-        card.style.setProperty('--i', String(i % 6));
-        var ph = make('div', 'team-photo');
-        var img = new Image();
-        img.src = m.photo; img.loading = 'lazy'; img.decoding = 'async';
-        img.alt = m.nom ? 'Portrait de ' + m.nom : 'Membre de l’équipe dirigeante';
-        img.addEventListener('error', function () { card.remove(); });
-        ph.appendChild(img); card.appendChild(ph);
-        if (m.nom) { card.appendChild(make('h3', '', m.nom)); if (m.role) card.appendChild(make('p', '', m.role)); }
-        grid.appendChild(card);
+      EQUIPE[0].membres.forEach(function (m, i) {
+        var c = memberCard(m); c.classList.add('reveal'); c.style.setProperty('--i', String(i)); grid.appendChild(c);
       });
-      $('#team-count').textContent = MEMBRES.length;
       watchAll(grid);
+      var btn = $('#team-all');
+      if (total <= EQUIPE[0].membres.length) { btn.hidden = true; return; }
+      btn.textContent = 'Voir tous les membres (' + total + ')';
+      btn.addEventListener('click', function () { openP('panel-equipe', btn); });
+      $('#panel-equipe')._build = function () {
+        var body = $('#panel-equipe-body');
+        EQUIPE.forEach(function (g) {
+          var sec = make('section', 'team-group');
+          sec.appendChild(make('h3', '', g.groupe + ' (' + g.membres.length + ')'));
+          var gr = make('div', 'team-grid');
+          g.membres.forEach(function (m) { gr.appendChild(memberCard(m)); });
+          sec.appendChild(gr); body.appendChild(sec);
+        });
+      };
     })();
 
-    /* ---------- Activités (Google Sheet publiée en CSV) ---------- */
+    /* ---------- Publications : les vidéos s'affichent sur le site (Google Sheet publiée en CSV) ---------- */
     function parseCSV(t) {
       var rows = [], r = [], c = '', q = false, i, ch;
       for (i = 0; i < t.length; i++) {
@@ -468,47 +582,82 @@
       return rows;
     }
     var ALLOWED = /^https:\/\/((www|web|m)\.)?(instagram|facebook)\.com\//i;
+
+    /* Adresse d'intégration (embed) d'une publication Instagram ou Facebook */
+    function embedFor(url) {
+      var m = url.match(/instagram\.com\/(?:[\w.]+\/)?(p|reel|reels|tv)\/([\w-]+)/i);
+      if (m) {
+        var type = m[1].toLowerCase() === 'reels' ? 'reel' : m[1].toLowerCase();
+        return { kind: 'instagram', url: url, src: 'https://www.instagram.com/' + type + '/' + m[2] + '/embed/' };
+      }
+      if (/facebook\.com/i.test(url)) {
+        var href = url.replace('//web.facebook.com', '//www.facebook.com').replace('//m.facebook.com', '//www.facebook.com');
+        var isVideo = /\/(videos|reel|watch)\b/i.test(href);
+        var base = isVideo ? 'https://www.facebook.com/plugins/video.php' : 'https://www.facebook.com/plugins/post.php';
+        return { kind: 'facebook', url: url, src: base + '?href=' + encodeURIComponent(href) + '&show_text=false&width=500' };
+      }
+      return null;
+    }
+
     function buildActivities(csv) {
-      var cols = { instagram: [], facebook: [] };
+      var cols = { instagram: [], facebook: [] }, seen = {};
       parseCSV(csv).slice(1).forEach(function (r) {
         r.forEach(function (cell) {
           var url = String(cell || '').trim();
-          if (ALLOWED.test(url)) cols[/instagram/i.test(url) ? 'instagram' : 'facebook'].push(url);
+          if (!ALLOWED.test(url) || seen[url]) return;
+          var info = embedFor(url);
+          if (!info) return;
+          seen[url] = true; cols[info.kind].push(info);
         });
       });
       if (CONFIG.NEWEST_AT_BOTTOM) { cols.instagram.reverse(); cols.facebook.reverse(); }
       var out = [], max = Math.max(cols.instagram.length, cols.facebook.length), k;
       for (k = 0; k < max; k++) {
-        if (cols.instagram[k]) out.push({ kind: 'instagram', url: cols.instagram[k] });
-        if (cols.facebook[k]) out.push({ kind: 'facebook', url: cols.facebook[k] });
+        if (cols.instagram[k]) out.push(cols.instagram[k]);
+        if (cols.facebook[k]) out.push(cols.facebook[k]);
       }
       return out;
     }
-    function renderActivities(items) {
-      var grid = $('#activities-grid'), shown = 0;
-      var more = make('div', 'more-wrap'), btn = make('button', 'btn btn-outline', 'Voir plus de publications');
-      btn.type = 'button'; more.appendChild(btn); grid.after(more);
-      function showNext() {
-        items.slice(shown, shown + CONFIG.ACTIVITIES_PER_PAGE).forEach(function (it, i) {
-          var label = it.kind === 'instagram' ? 'Instagram' : 'Facebook';
-          var card = make('article', 'card reveal' + (it.kind === 'facebook' ? ' fb' : ''));
-          card.style.setProperty('--i', String(i % 3));
-          card.appendChild(make('h3', '', 'Publication ' + label));
-          card.appendChild(make('p', '', 'Retrouvez cette activité de KONGO NA BISO sur ' + label + '.'));
-          var a = make('a', 'btn btn-outline btn-sm', 'Voir la publication');
-          a.href = it.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
-          a.setAttribute('aria-label', 'Voir la publication ' + label + ' (nouvel onglet)');
-          card.appendChild(a); grid.appendChild(card);
-        });
-        shown = Math.min(items.length, shown + CONFIG.ACTIVITIES_PER_PAGE);
-        watchAll(grid); more.hidden = shown >= items.length;
-      }
-      btn.addEventListener('click', showNext);
-      $('#activities-status').hidden = true;
-      showNext();
+
+    /* Carte vidéo : la vidéo ne se charge qu'au toucher (économise les données mobiles) */
+    function activityCard(it) {
+      var label = it.kind === 'instagram' ? 'Instagram' : 'Facebook';
+      var card = make('article', 'act-card'), media = make('div', 'act-media');
+      var play = make('button', 'act-play'); play.type = 'button';
+      play.setAttribute('aria-label', 'Lire la vidéo ' + label);
+      play.innerHTML = '<span class="act-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span class="act-label">Lire la vidéo</span><span class="act-src">' + label + '</span>';
+      play.addEventListener('click', function () {
+        var f = document.createElement('iframe');
+        f.src = it.src; f.title = 'Publication ' + label + ' de KONGO NA BISO';
+        f.allowFullscreen = true; f.referrerPolicy = 'strict-origin-when-cross-origin';
+        f.setAttribute('allow', 'autoplay; encrypted-media; fullscreen; picture-in-picture');
+        f.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation');
+        media.textContent = ''; media.classList.add('is-playing'); media.appendChild(f);
+      });
+      media.appendChild(play); card.appendChild(media);
+      var a = make('a', 'act-link', 'Ouvrir sur ' + label);
+      a.href = it.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+      card.appendChild(a);
+      return card;
     }
+
+    function renderActivities(items) {
+      var row = $('#activities-grid'), PREVIEW = 6;
+      items.slice(0, PREVIEW).forEach(function (it) { row.appendChild(activityCard(it)); });
+      $('#activities-status').hidden = true;
+      if (items.length > PREVIEW) {
+        var btn = $('#activities-all');
+        btn.hidden = false; btn.textContent = 'Voir toutes les publications (' + items.length + ')';
+        btn.addEventListener('click', function () { openP('panel-activites', btn); });
+        $('#panel-activites')._build = function () {
+          var grid = $('#activities-all-grid');
+          items.forEach(function (it) { grid.appendChild(activityCard(it)); });
+        };
+      }
+    }
+
     (function () {
-      var key = 'knb_activities', cached = null;
+      var key = 'knb_activities_v2', cached = null;
       try { var c = JSON.parse(sessionStorage.getItem(key) || 'null'); if (c && Date.now() - c.t < 600000) cached = c.v; } catch (e) { /* ignore */ }
       var p = cached ? Promise.resolve(cached) : fetch(CONFIG.ACTIVITIES_CSV_URL).then(function (r) { if (!r.ok) throw new Error('http'); return r.text(); });
       p.then(function (text) {
