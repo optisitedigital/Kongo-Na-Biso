@@ -6,7 +6,8 @@
    1. copie le site dans dist/ ;
    2. remplace les adresses du bloc CONFIG de index.html par les variables
       d'environnement de l'hébergeur (si elles sont définies) ;
-   3. ajoute une politique de sécurité (CSP) qui n'autorise que ce dont le site a besoin ;
+   3. ajoute une politique de sécurité (CSP) qui n'autorise que ce dont le site a besoin
+      (Google, et les vidéos Instagram / Facebook intégrées) ;
    4. crée un fichier _headers (pour les hébergeurs qui le lisent).
 
    IMPORTANT : ces variables sont des adresses PUBLIQUES (elles finissent visibles
@@ -92,7 +93,7 @@ if (!process.env.DISABLE_CSP) {
     "font-src https://fonts.gstatic.com",
     "img-src 'self' data:",
     "connect-src 'self' https://script.google.com https://docs.google.com https://*.googleusercontent.com" + cf,
-    "frame-src " + (turnstile ? 'https://challenges.cloudflare.com' : "'none'"),
+    "frame-src https://www.instagram.com https://www.facebook.com" + cf,
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self'"
