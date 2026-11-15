@@ -3,23 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KONGO NA BISO - Officiel</title>
-  <meta name="description" content="KONGO NA BISO : mouvement citoyen d'éveil patriotique et de justice sociale. Découvrez le mouvement, ses activités et rejoignez-nous.">
-  <meta name="theme-color" content="#00a8e8">
+  <title>KONGO NA BISO - Le Congo nous appartient</title>
+  <meta name="description" content="KONGO NA BISO est un mouvement citoyen d'éveil patriotique et de justice sociale, fondé le 13 septembre 2025 en République démocratique du Congo. Deviens SINZILI.">
+  <meta name="theme-color" content="#072547">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="KONGO NA BISO - Officiel">
-  <meta property="og:description" content="Mouvement citoyen d'éveil patriotique et de justice sociale. Le Congo nous appartient. Il est temps, allons-y.">
+  <meta property="og:title" content="KONGO NA BISO - Le Congo nous appartient">
+  <meta property="og:description" content="Mouvement citoyen d'éveil patriotique et de justice sociale. SINZILI, il est temps, allons-y !">
   <meta property="og:locale" content="fr_FR">
   <meta name="google-site-verification" content="Lcbsuj1NJbcCSlOqM9GYI_Rh5IQ0i0ESeaaQIp2cb-8">
   <link rel="icon" href="logo.jpeg">
   <link rel="apple-touch-icon" href="logo.jpeg">
-
-  <!-- L'affiche d'accueil est chargée en priorité : elle s'affiche dès l'arrivée -->
-  <link rel="preload" as="image" href="h%C3%A9ros-bg.jpg">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -28,53 +24,109 @@
 
   <!-- ================================================================ EN-TÊTE -->
   <header class="site-header" id="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Mouvement citoyen d’éveil patriotique et de justice sociale · République démocratique du Congo</span>
+        <span><a href="mailto:KongoNaBiso01@gmail.com">KongoNaBiso01@gmail.com</a> · <a href="tel:+243975835730">+243 9 758 35 730</a></span>
+      </div>
+    </div>
     <div class="container header-inner">
       <a class="brand" href="#accueil">
         <img src="logo.jpeg" alt="Logo de KONGO NA BISO" width="44" height="44">
-        <span class="brand-name">Kongo Na Biso</span>
+        <span class="brand-text"><span class="brand-name">KONGO NA BISO</span><span class="brand-sub">Éveil patriotique et justice sociale</span></span>
       </a>
       <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
         <ul>
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#mouvement">Le Mouvement</a></li>
           <li><a href="#activites">Activités</a></li>
-          <li><a href="#equipe">Équipe</a></li>
+          <li><a href="#fondateur">Fondateur</a></li>
           <li><a href="#adhesion">Adhésion</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="#adhesion">Deviens SINZILI</a></li>
         </ul>
       </nav>
       <button class="burger" id="burger-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation"><span aria-hidden="true"></span></button>
     </div>
+    <div class="tricolor" aria-hidden="true"></div>
   </header>
   <div class="nav-backdrop" id="nav-backdrop"></div>
 
   <main id="contenu">
 
-    <!-- ============================================================== ACCUEIL -->
-    <!-- L'affiche officielle contient déjà le titre et le slogan : on l'affiche en entier, sans la couper. -->
+    <!-- ============================================================== 1. ACCUEIL -->
     <section class="hero" id="accueil" aria-labelledby="hero-title">
-      <h1 id="hero-title" class="sr-only">KONGO NA BISO, mouvement citoyen d'éveil patriotique et de justice sociale</h1>
-      <div class="hero-frame">
-        <img class="hero-img" src="h%C3%A9ros-bg.jpg" alt="Affiche officielle de KONGO NA BISO : mouvement citoyen d'éveil patriotique et de justice sociale. Le Congo nous appartient. Il est temps, allons-y." fetchpriority="high" decoding="async">
-      </div>
-      <div class="hero-cta">
-        <a class="btn btn-light" href="#adhesion">Rejoindre le Mouvement</a>
-        <a class="btn btn-ghost" href="#mouvement">Découvrir le mouvement</a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow hero-anim d1">Fondé le 13 septembre 2025 · République démocratique du Congo</p>
+          <h1 id="hero-title" class="hero-anim d1">Le Congo nous appartient !</h1>
+          <p class="hero-lead hero-anim d2">KONGO NA BISO est un mouvement citoyen d’éveil patriotique et de justice sociale, fondé le 13 septembre 2025 en République démocratique du Congo par NGOMA MASSUNDU Philippe II.</p>
+          <p class="hero-text hero-anim d2">Nous croyons qu’aimer son pays, c’est aussi agir pour son développement. À travers nos actions citoyennes, humanitaires, éducatives et culturelles, nous voulons encourager une jeunesse responsable et contribuer à une société plus juste et solidaire.</p>
+          <div class="hero-cta hero-anim d3">
+            <a class="btn btn-primary" href="#adhesion">Deviens SINZILI</a>
+            <a class="btn btn-ghost" href="#activites">Découvrir nos activités</a>
+          </div>
+          <p class="hero-slogan hero-anim d4">SINZILI, il est temps, allons-y !</p>
+        </div>
+        <div class="emblem-wrap hero-anim d2">
+          <div class="emblem"><img src="logo.jpeg" alt="Emblème de KONGO NA BISO" width="320" height="320" fetchpriority="high"></div>
+          <ul class="pillars" aria-label="Nos trois valeurs"><li>Patriotisme</li><li>Élitisme</li><li>Fraternité</li></ul>
+        </div>
       </div>
     </section>
 
-    <!-- ========================================================== LE MOUVEMENT -->
+    <section class="stats" aria-label="Repères">
+      <div class="container stats-grid">
+        <div class="reveal"><strong>2025</strong><span>Année de fondation</span></div>
+        <div class="reveal reveal-d1"><strong>6</strong><span>Domaines d’action</span></div>
+        <div class="reveal reveal-d1"><strong>3</strong><span>Valeurs : Patriotisme, Élitisme, Fraternité</span></div>
+        <div class="reveal reveal-d2"><strong class="red">16+</strong><span>Âge minimum pour adhérer</span></div>
+      </div>
+    </section>
+
+    <!-- =========================================================== 2. LE MOUVEMENT -->
     <section class="section" id="mouvement" aria-labelledby="mouvement-title">
+      <div class="container two-col">
+        <div>
+          <header class="section-head reveal">
+            <p class="kicker">Le Mouvement</p>
+            <h2 id="mouvement-title">Qui sommes-nous ?</h2>
+          </header>
+          <div class="prose">
+            <p class="reveal" data-typewriter>KONGO NA BISO est un mouvement citoyen apolitique qui rassemble des personnes désireuses de contribuer positivement à l’avenir de la République démocratique du Congo.</p>
+            <p class="reveal" data-typewriter>Notre engagement repose sur trois valeurs : Patriotisme, Élitisme, Fraternité.</p>
+            <p class="reveal" data-typewriter>Nous œuvrons pour l’éveil citoyen, la promotion des droits humains, la solidarité et la valorisation de notre identité congolaise.</p>
+            <p class="conviction reveal">Notre conviction est simple : le changement commence aussi par nous.</p>
+          </div>
+        </div>
+        <ul class="values">
+          <li class="value v1 reveal"><span class="value-n">01</span><h3>Patriotisme</h3></li>
+          <li class="value v2 reveal reveal-d1"><span class="value-n">02</span><h3>Élitisme</h3></li>
+          <li class="value v3 reveal reveal-d2"><span class="value-n">03</span><h3>Fraternité</h3></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================ 3. ACTIVITÉS -->
+    <section class="section section-soft" id="activites" aria-labelledby="activites-title">
       <div class="container">
         <header class="section-head reveal">
-          <h2 id="mouvement-title">Histoire du mouvement</h2>
+          <p class="kicker">Activités</p>
+          <h2 id="activites-title">Des actions concrètes au service de la population</h2>
+          <p class="lead">KONGO NA BISO traduit ses convictions en initiatives concrètes au service de la population, particulièrement de la jeunesse. Nos actions touchent plusieurs domaines :</p>
         </header>
 
-        <div class="prose">
-          <p class="reveal" data-typewriter>Le mouvement citoyen <strong>KONGO NA BISO</strong> est né d’une volonté profonde de voir émerger une jeunesse congolaise consciente, engagée et actrice du changement.</p>
-          <p class="reveal reveal-d1" data-typewriter>Fondé en septembre 2025, KONGO NA BISO a été créé par <strong>NGOMA MASSUNDU PHILIPPE</strong>, citoyen congolais né à Kinshasa. Économiste de formation, il est licencié en économie et gestion de l’Université Protestante au Congo (UPC) depuis 2024.</p>
+        <div class="actions-row">
+          <article class="action-card reveal"><span class="action-n">01</span><h3>Environnement</h3><p>L’Opération Zéro Plastique, une campagne de sensibilisation et d’assainissement pour un environnement plus propre.</p></article>
+          <article class="action-card reveal reveal-d1"><span class="action-n">02</span><h3>Solidarité et humanitaire</h3><p>Nos activités caritatives en faveur des personnes vulnérables, notamment l’initiative Elikya.</p></article>
+          <article class="action-card reveal reveal-d2"><span class="action-n">03</span><h3>Éveil patriotique</h3><p>Nos campagnes de sensibilisation dans les écoles, notamment à travers les chants patriotiques, pour transmettre aux jeunes l’amour du Congo et le sens de la citoyenneté.</p></article>
+          <article class="action-card reveal"><span class="action-n">04</span><h3>Éducation</h3><p>Nos campagnes scolaires pour sensibiliser les élèves aux valeurs citoyennes et à leur responsabilité dans la société.</p></article>
+          <article class="action-card reveal reveal-d1"><span class="action-n">05</span><h3>Sport et jeunesse</h3><p>Judo Vacances, une initiative qui encourage la pratique sportive, la discipline et l’encadrement des jeunes.</p></article>
+          <article class="action-card reveal reveal-d2"><span class="action-n">06</span><h3>Culture et identité</h3><p>Des initiatives qui valorisent notre patrimoine culturel et contribuent à renforcer notre identité congolaise.</p></article>
         </div>
+        <p class="closing reveal">À travers ces initiatives, nous voulons faire de l’engagement citoyen une réalité et encourager chacun à contribuer, à son niveau, à la construction d’un Congo meilleur.</p>
 
+        <h3 class="subhead reveal">Revivez nos actions en images</h3>
         <div class="marquee reveal" data-marquee>
           <div class="marquee-track">
             <figure><img src="mouv1.jpg" alt="Homme en t-shirt blanc Kongo Na Biso tenant un sac de produits emballés" loading="lazy" decoding="async"></figure>
@@ -84,48 +136,6 @@
             <figure><img src="mouv5.jpg" alt="Jeune homme en costume prenant la parole devant le drapeau de la RDC" loading="lazy" decoding="async"></figure>
             <figure><img src="mouv6.jpg" alt="Photo noir et blanc d'un groupe de dix-sept personnes posant devant un bâtiment" loading="lazy" decoding="async"></figure>
             <figure><img src="mouv7.jpg" alt="Volontaires en gilets verts et casquettes alignés dans une rue devant un mur orange" loading="lazy" decoding="async"></figure>
-          </div>
-        </div>
-        <div class="marquee-tools">
-          <button class="marquee-toggle" type="button" data-marquee-toggle aria-pressed="false">Arrêter le défilement</button>
-        </div>
-
-        <blockquote class="quote reveal">
-          <p data-typewriter>"KONGO NA BISO, qui signifie « Le Congo nous appartient », est né comme un cri de réveil collectif et un appel à la responsabilité citoyenne."</p>
-        </blockquote>
-
-        <div class="prose">
-          <h3 class="reveal">Nos Engagements</h3>
-          <ul class="engagements reveal">
-            <li>Promouvoir les droits humains et la dignité humaine.</li>
-            <li>Encourager l’éducation, l’entrepreneuriat et l’innovation des jeunes.</li>
-            <li>Valoriser la culture congolaise, les langues et l’identité nationale.</li>
-            <li>Renforcer la participation citoyenne et la cohésion sociale.</li>
-            <li>Agir concrètement en faveur des personnes vulnérables.</li>
-          </ul>
-          <p class="reveal reveal-d1" data-typewriter>KONGO NA BISO n’est pas un simple mouvement : c’est une dynamique citoyenne, une main tendue, et une force collective déterminée à bâtir un Congo plus juste, solidaire et prospère.</p>
-          <p class="signature reveal reveal-d2">By NGOMA MASSUNDU PHILIPPE</p>
-          <p class="closing-tag reveal reveal-d2">LE CONGO NOUS APPARTIENT.<br>IL EST TEMPS, ALLONS-Y.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================ ACTIVITÉS -->
-    <section class="section section-alt" id="activites" aria-labelledby="activites-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <h2 id="activites-title">Nos Activités</h2>
-          <p class="section-lead">Retrouvez l'historique complet de nos actions, de nos activités les plus récentes aux plus anciennes.</p>
-        </header>
-
-        <div id="activities-grid" class="act-row" aria-live="polite"></div>
-        <div id="activities-status" class="feed-status" role="status"><p>Chargement des publications…</p></div>
-        <div class="more-wrap"><button type="button" id="activities-all" class="btn btn-primary" hidden>Voir toutes les publications</button></div>
-        <noscript><div class="feed-status"><p>Activez JavaScript pour afficher nos vidéos. Retrouvez-nous sur Instagram : @kongonabiso.k.n.b.</p></div></noscript>
-
-        <h3 class="reveal subhead">Nos activités en images</h3>
-        <div class="marquee reveal" data-marquee>
-          <div class="marquee-track">
             <figure><img src="photo2.jpg" alt="Bénévoles en gilets verts et casquettes tenant des pancartes anti-plastiques dans une rue" loading="lazy" decoding="async"></figure>
             <figure><img src="photo3.jpg" alt="Volontaires en gilets verts et casquettes avec pancartes sur une route bordée d'arbres" loading="lazy" decoding="async"></figure>
             <figure><img src="photo4.jpg" alt="Photo noir et blanc d'un groupe de jeunes adultes posant devant un bâtiment" loading="lazy" decoding="async"></figure>
@@ -135,37 +145,73 @@
             <figure><img src="photo8.jpg" alt="Grand groupe faisant le signe de victoire devant un bâtiment, en noir et blanc" loading="lazy" decoding="async"></figure>
           </div>
         </div>
-        <div class="marquee-tools">
-          <button class="marquee-toggle" type="button" data-marquee-toggle aria-pressed="false">Arrêter le défilement</button>
+        <div class="marquee-tools"><button class="marquee-toggle" type="button" data-marquee-toggle aria-pressed="false">Arrêter le défilement</button></div>
+
+        <h3 class="subhead reveal">Nos vidéos et publications</h3>
+        <div id="activities-grid" class="act-row" aria-live="polite"></div>
+        <div id="activities-status" class="feed-status" role="status"><p>Chargement des publications…</p></div>
+        <div class="more-wrap"><button type="button" id="activities-all" class="btn btn-outline" hidden>Voir toutes les publications</button></div>
+        <noscript><div class="feed-status"><p>Activez JavaScript pour afficher nos vidéos. Retrouvez-nous sur Instagram : @kongonabiso.k.n.b.</p></div></noscript>
+      </div>
+    </section>
+
+    <!-- =========================================================== 4. LE FONDATEUR -->
+    <section class="section" id="fondateur" aria-labelledby="fondateur-title">
+      <div class="container founder">
+        <figure class="founder-photo reveal">
+          <img src="chef1.jpg" alt="Portrait de NGOMA MASSUNDU Philippe II, fondateur de KONGO NA BISO" loading="lazy" decoding="async">
+        </figure>
+        <div class="founder-body">
+          <p class="kicker reveal">Le Fondateur</p>
+          <h2 id="fondateur-title" class="reveal">NGOMA MASSUNDU Philippe II</h2>
+          <p class="founder-role reveal">Fondateur et initiateur de KONGO NA BISO</p>
+          <p class="founder-tag reveal">Un jeune engagé pour son pays et sa génération</p>
+          <p class="reveal">Licencié dans la Faculté d’Administration et Sciences Économiques (FASE) dans la filière de la Gestion à l’Université Protestante au Congo (UPC), NGOMA MASSUNDU Philippe II est un jeune Congolais engagé dans la société civile, animé par la volonté de contribuer à l’éveil citoyen et au développement de son pays.</p>
+          <p class="reveal">Convaincu que la jeunesse congolaise doit prendre une part active dans la construction de son avenir, il fonde, le 13 septembre 2025, KONGO NA BISO, un mouvement citoyen d’éveil patriotique et de justice sociale.</p>
+          <details class="bio">
+            <summary>Lire la suite de la biographie</summary>
+            <p>À travers cette initiative, il souhaite encourager les jeunes à dépasser l’indifférence, à développer leur sens des responsabilités et à devenir des acteurs du changement dans leurs communautés.</p>
+            <p>Sportif et judoka, il accorde également une importance particulière à la discipline, au respect, à la persévérance et au dépassement de soi, des valeurs qu’il entend promouvoir auprès de la jeunesse.</p>
+            <p>Son engagement repose sur une conviction : le développement du Congo nécessite des citoyens conscients, responsables et prêts à servir l’intérêt général.</p>
+            <p>À travers KONGO NA BISO, il ambitionne de contribuer à une jeunesse mieux engagée, une société plus solidaire et un Congo où le patriotisme se traduit par des actions concrètes.</p>
+          </details>
+          <blockquote class="founder-quote reveal"><p>« Le Congo nous appartient. Il est temps, allons-y ! »</p></blockquote>
         </div>
       </div>
     </section>
 
-    <!-- ================================================================ ÉQUIPE -->
-    <section class="section" id="equipe" aria-labelledby="equipe-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <h2 id="equipe-title">Équipe Dirigeante</h2>
-          <p class="team-count"><span id="team-count">0</span> membres</p>
+    <!-- ================================================================ 5. ÉQUIPE -->
+    <section class="section section-soft team-band" id="equipe" aria-labelledby="equipe-title">
+      <div class="container narrow">
+        <header class="section-head center reveal">
+          <p class="kicker">Équipe</p>
+          <h2 id="equipe-title">Une vision, un engagement collectif</h2>
         </header>
-        <div id="team-grid" class="team-grid"></div>
-        <div class="more-wrap"><button type="button" id="team-all" class="btn btn-primary">Voir tous les membres</button></div>
+        <p class="reveal">Derrière KONGO NA BISO, il y a des femmes et des hommes qui partagent une même volonté : servir la communauté et promouvoir une citoyenneté responsable.</p>
+        <p class="reveal">Sous la conduite de son Président Fondateur, NGOMA MASSUNDU Philippe II, le mouvement encourage l’engagement, l’initiative et la participation de ses membres.</p>
+        <p class="reveal">Parce que chaque compétence peut être utile, chacun a la possibilité de contribuer à notre vision commune.</p>
       </div>
     </section>
 
-    <!-- ============================================================= ADHÉSION -->
-    <section class="section section-alt" id="adhesion" aria-labelledby="adhesion-title">
-      <div class="container">
-        <header class="section-head center reveal">
-          <h2 id="adhesion-title">Rejoindre KNB</h2>
-          <p class="section-lead">Remplissez ce formulaire pour adhérer au mouvement citoyen KONGO NA BISO.</p>
-        </header>
+    <!-- ============================================================= 6. ADHÉSION -->
+    <section class="section adhesion" id="adhesion" aria-labelledby="adhesion-title">
+      <div class="container adhesion-grid">
+        <div class="adhesion-copy">
+          <header class="section-head reveal">
+            <p class="kicker">Adhésion</p>
+            <h2 id="adhesion-title">Deviens SINZILI !</h2>
+          </header>
+          <p class="reveal">SINZILI, c’est le nom que nous donnons aux membres de KONGO NA BISO. Il évoque celui qui veille, qui surveille et qui protège.</p>
+          <p class="reveal">Rejoindre KNB, c’est choisir de ne pas rester spectateur face aux défis de notre société. C’est vouloir apprendre, participer aux activités et contribuer au changement.</p>
+          <p class="adhesion-call reveal">Tu as au moins 16 ans et tu partages nos valeurs ? Rejoins-nous !</p>
+          <p class="adhesion-slogan reveal">Le Congo nous appartient. Il est temps, allons-y !</p>
+        </div>
 
         <div class="form-wrap reveal">
           <div id="form-status" class="form-status" role="alert" hidden></div>
-
           <form id="adhesion-form" novalidate>
-            <p class="form-intro">Les champs marqués d’un <span class="req" aria-hidden="true">*</span> sont obligatoires. Vos données servent uniquement à enregistrer votre adhésion.</p>
+            <h3 class="form-title">Formulaire d’adhésion</h3>
+            <p class="form-intro">Les champs marqués d’un <span class="req" aria-hidden="true">*</span> sont obligatoires.</p>
 
             <div class="form-grid cols-2">
               <div class="field">
@@ -227,21 +273,26 @@
             <div id="turnstile-slot"></div>
 
             <div class="consent">
+              <input type="checkbox" id="f-age" name="age16" required aria-describedby="e-age">
+              <label for="f-age">Je confirme avoir au moins 16 ans. <span class="req" aria-hidden="true">*</span></label>
+            </div>
+            <p class="field-error" id="e-age"></p>
+            <div class="consent">
               <input type="checkbox" id="f-consentement" name="consentement" required aria-describedby="e-consentement">
               <label for="f-consentement">J’accepte que mes données soient enregistrées pour mon adhésion, conformément à la <a href="#confidentialite" data-open-privacy>politique de confidentialité</a>. <span class="req" aria-hidden="true">*</span></label>
             </div>
             <p class="field-error" id="e-consentement"></p>
 
-            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Envoyer mon adhésion</button>
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Envoyer ma demande</button>
           </form>
 
           <div id="form-success" class="form-success" hidden>
             <div class="check" aria-hidden="true">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </div>
-            <h3>Merci, votre adhésion a bien été enregistrée</h3>
-            <p>Votre demande a bien été transmise à KONGO NA BISO.</p>
-            <a class="btn btn-outline" href="#accueil">Retour à l'accueil</a>
+            <h3>Bienvenue parmi les SINZILI<span id="success-name"></span> !</h3>
+            <p>Votre adhésion a bien été enregistrée. Le Congo nous appartient. Il est temps, allons-y !</p>
+            <a class="btn btn-outline" href="#accueil">Retour à l’accueil</a>
           </div>
 
           <details class="privacy" id="confidentialite">
@@ -249,93 +300,73 @@
             <p><strong>Données collectées :</strong> nom, postnom, prénom, sexe, numéro de téléphone, email (facultatif), commune ou quartier, type de membre.</p>
             <p><strong>Utilisation :</strong> enregistrer votre adhésion et vous contacter au sujet du mouvement. Vos données ne sont ni vendues ni cédées à des tiers.</p>
             <p><strong>Accès :</strong> limité à quelques responsables de KONGO NA BISO, dans un fichier protégé.</p>
-            <p><strong>Vos droits :</strong> pour consulter, corriger ou faire supprimer vos données, écrivez à kongonabiso01@gmail.com.</p>
+            <p><strong>Vos droits :</strong> pour consulter, corriger ou faire supprimer vos données, écrivez à KongoNaBiso01@gmail.com.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- =============================================================== CONTACT -->
+    <!-- =============================================================== 7. CONTACT -->
     <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <h2 id="contact-title">À propos et contact</h2>
-        </header>
-
-        <div class="contact-grid">
-          <ul class="contact-list reveal">
-            <li>
-              <a href="mailto:kongonabiso01@gmail.com">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
-                <span class="contact-body"><span class="contact-key">Gmail</span><span class="contact-val">kongonabiso01@gmail.com</span><small>Écrivez-nous, nous répondons dès que possible.</small></span>
-              </a>
-            </li>
-            <li>
-              <a href="tel:+243975835730">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
-                <span class="contact-body"><span class="contact-key">Téléphone</span><span class="contact-val">+243 975 835 730</span><small>Appelez-nous ou envoyez-nous un WhatsApp.</small></span>
-              </a>
-            </li>
-          </ul>
-
-          <ul class="contact-list reveal">
-            <li>
-              <a href="https://www.instagram.com/kongonabiso.k.n.b/" target="_blank" rel="noopener noreferrer">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-                <span class="contact-body"><span class="contact-key">Instagram</span><span class="contact-val">@kongonabiso.k.n.b</span><small>Ouvrir le profil dans un nouvel onglet.</small></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/KongoNaBiso01" target="_blank" rel="noopener noreferrer">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4l7.2 9.3L4.4 20h2.1l5.6-5.7L16.8 20H20l-7.5-9.7L18.9 4h-2.1l-5.2 5.3L8.2 4H4Z"/></svg>
-                <span class="contact-body"><span class="contact-key">Twitter</span><span class="contact-val">@KongoNaBiso01</span><small>Ouvrir le profil dans un nouvel onglet.</small></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/@kongo.na.biso1" target="_blank" rel="noopener noreferrer">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3v10.5a4.5 4.5 0 1 1-4-4.5"/><path d="M15 6.5A5.5 5.5 0 0 0 20 12"/></svg>
-                <span class="contact-body"><span class="contact-key">TikTok</span><span class="contact-val">@kongo.na.biso1</span><small>Ouvrir le profil dans un nouvel onglet.</small></span>
-              </a>
-            </li>
-          </ul>
+      <div class="container two-col">
+        <div>
+          <header class="section-head reveal">
+            <p class="kicker">Contact</p>
+            <h2 id="contact-title">Restons en contact</h2>
+          </header>
+          <p class="reveal">Une question, une proposition d’activité ou une envie de collaborer avec KONGO NA BISO ?</p>
+          <p class="reveal">Nous sommes ouverts aux échanges avec les citoyens, les associations, les institutions et les organisations qui partagent nos préoccupations.</p>
+          <p class="closing reveal">Écrivons ensemble la suite de notre engagement.</p>
+          <div class="social reveal">
+            <a href="https://www.instagram.com/kongonabiso.k.n.b/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://twitter.com/KongoNaBiso01" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.tiktok.com/@kongo.na.biso1" target="_blank" rel="noopener noreferrer">TikTok</a>
+          </div>
         </div>
 
-        <div class="contact-actions reveal">
-          <a class="btn btn-whatsapp" href="https://wa.me/243975835730?text=Bonjour%20KONGO%20NA%20BISO%2C%20je%20souhaite%20des%20informations%20sur%20le%20mouvement." target="_blank" rel="noopener noreferrer">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-            Ouvrir WhatsApp
-          </a>
-          <p class="note">Réponse rapide par WhatsApp au +243 975 835 730.</p>
-        </div>
+        <ul class="contact-list reveal">
+          <li><a href="mailto:KongoNaBiso01@gmail.com">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <span class="contact-body"><span class="contact-key">E-mail</span><span class="contact-val">KongoNaBiso01@gmail.com</span></span></a></li>
+          <li><a href="tel:+243975835730">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <span class="contact-body"><span class="contact-key">Téléphones</span><span class="contact-val">+243 9 758 35 730</span></span></a></li>
+          <li><a href="tel:+243813419399">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <span class="contact-body"><span class="contact-key">Téléphones</span><span class="contact-val">+243 81 34 19 399</span></span></a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Binza-Pigeon+Ngaliema+Kinshasa" target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="contact-body"><span class="contact-key">Adresse</span><span class="contact-val">Kinshasa, Ngaliema, Binza-Pigeon, Ebonda 32, RDC</span><small>Voir sur la carte</small></span></a></li>
+          <li><a class="wa" href="https://wa.me/243975835730?text=Bonjour%20KONGO%20NA%20BISO%2C%20je%20souhaite%20des%20informations%20sur%20le%20mouvement." target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <span class="contact-body"><span class="contact-key">WhatsApp</span><span class="contact-val">Écrire sur WhatsApp</span></span></a></li>
+        </ul>
       </div>
     </section>
   </main>
 
   <!-- ================================================================ PIED -->
   <footer class="site-footer">
+    <div class="tricolor" aria-hidden="true"></div>
     <div class="container footer-inner">
-      <p class="footer-brand">KONGO NA BISO (KNB) © 2026</p>
+      <div>
+        <p class="footer-brand">KONGO NA BISO</p>
+        <p class="footer-tag">Le Congo nous appartient. Il est temps, allons-y !</p>
+      </div>
       <nav aria-label="Liens de pied de page">
         <ul>
           <li><a href="#mouvement">Le Mouvement</a></li>
           <li><a href="#activites">Activités</a></li>
+          <li><a href="#fondateur">Fondateur</a></li>
           <li><a href="#adhesion">Adhésion</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <p class="footer-legal">Site officiel du mouvement citoyen KONGO NA BISO.</p>
+      <p class="footer-legal">© 2026 KONGO NA BISO · Mouvement citoyen apolitique · RDC</p>
     </div>
   </footer>
 
-  <!-- ===================================================== PANNEAUX PLEIN ÉCRAN -->
-  <div class="panel" id="panel-equipe" data-hash="tous-les-membres" role="dialog" aria-modal="true" aria-labelledby="panel-equipe-title" hidden>
-    <div class="panel-bar">
-      <button class="panel-back" type="button" data-panel-close><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Retour</button>
-      <h2 id="panel-equipe-title">Tous les membres</h2>
-    </div>
-    <div class="panel-body" id="panel-equipe-body"></div>
-  </div>
-
+  <!-- ===================================================== PANNEAU PLEIN ÉCRAN -->
   <div class="panel" id="panel-activites" data-hash="toutes-les-publications" role="dialog" aria-modal="true" aria-labelledby="panel-activites-title" hidden>
     <div class="panel-bar">
       <button class="panel-back" type="button" data-panel-close><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Retour</button>
@@ -357,24 +388,6 @@
     NEWEST_AT_BOTTOM: true,     // true si les nouvelles publications sont ajoutées en bas de la Sheet
     ACTIVITIES_PER_PAGE: 9
   };
-
-  /* Équipe : groupes affichés dans cet ordre. Le premier groupe ("Présidence") s'affiche
-     directement sur la page ; les autres sont dans le panneau "Voir tous les membres".
-     Pour chaque membre : photo, nom, role (sa fonction). Nom et role sont facultatifs. */
-  var EQUIPE = [
-    { groupe: 'Présidence', membres: [
-      { photo: 'chef1.jpg', nom: 'NGOMA MASSUNDU PHILIPPE', role: 'Fondateur' }
-    ] },
-    { groupe: 'Membres', membres: [
-      { photo: 'membre1.jpg' }, { photo: 'membre2.jpg' }, { photo: 'membre3.jpg' }, { photo: 'membre4.jpg' },
-      { photo: 'membre5.jpg' }, { photo: 'membre6.jpg' }, { photo: 'membre7.jpg' }, { photo: 'membre8.jpg' },
-      { photo: 'membre9.jpg' }, { photo: 'membre10.jpg' }, { photo: 'membre11.jpg' }, { photo: 'membre12.jpg' },
-      { photo: 'membre13.jpg' }, { photo: 'membre14.jpg' }, { photo: 'membre15.jpg' }, { photo: 'membre16.jpg' },
-      { photo: 'membre17.jpg' }, { photo: 'membre18.jpg' }, { photo: 'membre19.jpg' }, { photo: 'membre20.jpg' },
-      { photo: 'membre21.jpg' }, { photo: 'membre22.jpg' }, { photo: 'membre23.jpg' }, { photo: 'membre27.jpg' },
-      { photo: 'membrex.jpg' }
-    ] }
-  ];
 
   (function () {
     'use strict';
@@ -527,46 +540,6 @@
     window.addEventListener('popstate', function () { if (openPanel && !(history.state && history.state.panel)) doClose(); });
     $$('[data-panel-close]').forEach(function (b) { b.addEventListener('click', requestClose); });
 
-    /* ---------- Équipe ---------- */
-    function memberCard(m) {
-      var card = make('article', 'team-card'), ph = make('div', 'team-photo'), img = new Image();
-      img.src = m.photo; img.loading = 'lazy'; img.decoding = 'async';
-      img.alt = m.nom ? 'Portrait de ' + m.nom : 'Membre de l’équipe dirigeante';
-      img.addEventListener('error', function () { card.remove(); });
-      ph.appendChild(img); card.appendChild(ph);
-      if (m.nom || m.role) {
-        var cap = make('div', 'team-cap');
-        if (m.nom) cap.appendChild(make('h3', '', m.nom));
-        if (m.role) cap.appendChild(make('p', '', m.role));
-        card.appendChild(cap);
-      }
-      return card;
-    }
-    (function () {
-      var total = 0;
-      EQUIPE.forEach(function (g) { total += g.membres.length; });
-      $('#team-count').textContent = total;
-      var grid = $('#team-grid');
-      EQUIPE[0].membres.forEach(function (m, i) {
-        var c = memberCard(m); c.classList.add('reveal'); c.style.setProperty('--i', String(i)); grid.appendChild(c);
-      });
-      watchAll(grid);
-      var btn = $('#team-all');
-      if (total <= EQUIPE[0].membres.length) { btn.hidden = true; return; }
-      btn.textContent = 'Voir tous les membres (' + total + ')';
-      btn.addEventListener('click', function () { openP('panel-equipe', btn); });
-      $('#panel-equipe')._build = function () {
-        var body = $('#panel-equipe-body');
-        EQUIPE.forEach(function (g) {
-          var sec = make('section', 'team-group');
-          sec.appendChild(make('h3', '', g.groupe + ' (' + g.membres.length + ')'));
-          var gr = make('div', 'team-grid');
-          g.membres.forEach(function (m) { gr.appendChild(memberCard(m)); });
-          sec.appendChild(gr); body.appendChild(sec);
-        });
-      };
-    })();
-
     /* ---------- Publications : les vidéos s'affichent sur le site (Google Sheet publiée en CSV) ---------- */
     function parseCSV(t) {
       var rows = [], r = [], c = '', q = false, i, ch;
@@ -680,7 +653,7 @@
     var FIELDS = [
       ['nom', 'f-nom', 'e-nom'], ['postnom', 'f-postnom', 'e-postnom'], ['prenom', 'f-prenom', 'e-prenom'],
       ['sexe', 'f-sexe', 'e-sexe'], ['telephone', 'f-telephone', 'e-telephone'], ['email', 'f-email', 'e-email'],
-      ['adresse', 'f-adresse', 'e-adresse'], ['type_membre', 'f-type', 'e-type'], ['consentement', 'f-consentement', 'e-consentement']
+      ['adresse', 'f-adresse', 'e-adresse'], ['type_membre', 'f-type', 'e-type'], ['age16', 'f-age', 'e-age'], ['consentement', 'f-consentement', 'e-consentement']
     ];
     function validPhone(v) {
       var s = v.replace(/[\s().-]/g, '');
@@ -695,6 +668,7 @@
         case 'email': return !v || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? '' : 'Adresse email invalide.';
         case 'adresse': return v.length >= 3 ? '' : 'Indiquez votre commune ou quartier.';
         case 'type_membre': return v ? '' : 'Choisissez un type de membre.';
+        case 'age16': return v ? '' : 'Vous devez avoir au moins 16 ans pour adhérer.';
         case 'consentement': return v ? '' : 'Vous devez accepter pour adhérer.';
       }
       return '';
@@ -761,6 +735,7 @@
           if (out && out.ok) {
             form.hidden = true; $('#form-status').hidden = true;
             var ok = $('#form-success'); ok.hidden = false;
+            var pn = $('#f-prenom').value.trim(); $('#success-name').textContent = pn ? ', ' + pn : '';
             var h = $('h3', ok); h.tabIndex = -1; h.focus();
           } else setStatus((out && out.error) || 'Votre adhésion n’a pas pu être enregistrée. Réessayez.');
         })
