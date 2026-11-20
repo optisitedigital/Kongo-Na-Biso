@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KONGO NA BISO - Le Congo nous appartient</title>
-  <meta name="description" content="KONGO NA BISO est un mouvement citoyen d'éveil patriotique et de justice sociale, fondé le 13 septembre 2025 en République démocratique du Congo. Deviens SINZILI.">
+  <meta name="description" content="KONGO NA BISO est un mouvement citoyen d'éveil patriotique et de justice sociale, fondé le 13 septembre 2025 en République démocratique du Congo. Rejoignez le mouvement.">
   <meta name="theme-color" content="#072547">
   <meta property="og:type" content="website">
   <meta property="og:title" content="KONGO NA BISO - Le Congo nous appartient">
@@ -43,11 +43,21 @@
           <li><a href="#fondateur">Fondateur</a></li>
           <li><a href="#adhesion">Adhésion</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="nav-cta"><a class="btn btn-primary" href="#adhesion">Deviens SINZILI</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="#adhesion">Rejoindre le mouvement</a></li>
         </ul>
       </nav>
       <button class="burger" id="burger-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation"><span aria-hidden="true"></span></button>
     </div>
+    <nav class="subnav" id="subnav" aria-label="Sections du site">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#mouvement">Le Mouvement</a></li>
+        <li><a href="#activites">Activités</a></li>
+        <li><a href="#fondateur">Fondateur</a></li>
+        <li><a href="#adhesion">Adhésion</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <div class="nav-backdrop" id="nav-backdrop"></div>
 
@@ -62,7 +72,7 @@
           <p class="hero-lead hero-anim d2">KONGO NA BISO est un mouvement citoyen d’éveil patriotique et de justice sociale, fondé le 13 septembre 2025 en République démocratique du Congo par NGOMA MASSUNDU Philippe II.</p>
           <p class="hero-text hero-anim d2">Nous croyons qu’aimer son pays, c’est aussi agir pour son développement. À travers nos actions citoyennes, humanitaires, éducatives et culturelles, nous voulons encourager une jeunesse responsable et contribuer à une société plus juste et solidaire.</p>
           <div class="hero-cta hero-anim d3">
-            <a class="btn btn-primary" href="#adhesion">Deviens SINZILI</a>
+            <a class="btn btn-primary" href="#adhesion">Rejoindre le mouvement</a>
             <a class="btn btn-ghost" href="#activites">Découvrir nos activités</a>
           </div>
           <p class="hero-slogan hero-anim d4">SINZILI, il est temps, allons-y !</p>
@@ -100,9 +110,9 @@
           </div>
         </div>
         <ul class="values">
-          <li class="value v1 reveal"><span class="value-n">01</span><h3>Patriotisme</h3></li>
-          <li class="value v2 reveal reveal-d1"><span class="value-n">02</span><h3>Élitisme</h3></li>
-          <li class="value v3 reveal reveal-d2"><span class="value-n">03</span><h3>Fraternité</h3></li>
+          <li class="value v1 reveal"><span class="value-n">01</span><div><h3>Patriotisme</h3><p>Aimer profondément la République démocratique du Congo, respecter ses symboles, protéger son patrimoine et placer l’intérêt général au-dessus des intérêts particuliers.</p></div></li>
+          <li class="value v2 reveal reveal-d1"><span class="value-n">02</span><div><h3>Élitisme</h3><p>Promouvoir la culture de l’excellence, la rigueur morale, la compétence intellectuelle et l’exemplarité comportementale dans chaque sphère de la société congolaise.</p></div></li>
+          <li class="value v3 reveal reveal-d2"><span class="value-n">03</span><div><h3>Fraternité</h3><p>Cultiver l’unité nationale au-delà de toute diversité, pratiquer l’entraide active et bâtir une solidarité indéfectible entre tous les fils et toutes les filles du Congo.</p></div></li>
         </ul>
         </div>
         <div class="marquee reveal" data-marquee>
@@ -205,7 +215,7 @@
         <div class="adhesion-copy">
           <header class="section-head reveal">
             <p class="kicker">Adhésion</p>
-            <h2 id="adhesion-title">Deviens SINZILI !</h2>
+            <h2 id="adhesion-title">Rejoindre le mouvement</h2>
           </header>
           <p class="reveal">SINZILI, c’est le nom que nous donnons aux membres de KONGO NA BISO. Il évoque celui qui veille, qui surveille et qui protège.</p>
           <p class="reveal">Rejoindre KNB, c’est choisir de ne pas rester spectateur face aux défis de notre société. C’est vouloir apprendre, participer aux activités et contribuer au changement.</p>
@@ -247,6 +257,11 @@
                   </select>
                   <p class="field-error" id="e-sexe"></p>
                 </div>
+              <div class="field span-2">
+                <label for="f-profession">Profession <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="f-profession" name="profession" autocomplete="organization-title" required aria-describedby="e-profession">
+                <p class="field-error" id="e-profession"></p>
+              </div>
               </div>
             </fieldset>
 
@@ -273,7 +288,7 @@
             </fieldset>
 
             <fieldset class="step" hidden>
-              <legend class="sr-only">Confirmation</legend>
+              <legend class="sr-only">Engagement</legend>
               <div class="form-grid">
                 <div class="field span-2">
                   <label for="f-type">Type de membre <span class="req" aria-hidden="true">*</span></label>
@@ -284,6 +299,15 @@
                   </select>
                   <p class="field-error" id="e-type"></p>
                 </div>
+              <div class="field span-2">
+                <label for="f-cotisation">Êtes-vous prêt(e) à verser la cotisation mensuelle ? <span class="req" aria-hidden="true">*</span></label>
+                <select id="f-cotisation" name="cotisation_mensuelle" required aria-describedby="e-cotisation">
+                  <option value="" selected disabled>Votre réponse</option>
+                  <option value="Oui">Oui, je suis prêt(e)</option>
+                  <option value="Non">Non, pas pour le moment</option>
+                </select>
+                <p class="field-error" id="e-cotisation"></p>
+              </div>
               </div>
               <!-- Champ piège anti-robot : doit rester vide -->
             <div class="honeypot" aria-hidden="true">
@@ -390,6 +414,8 @@
     </div>
   </footer>
 
+  <a class="to-top" id="to-top" href="#accueil" aria-label="Retour en haut de la page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg></a>
+
   <!-- ===================================================== PANNEAU PLEIN ÉCRAN -->
   <div class="panel" id="panel-activites" data-hash="toutes-les-publications" role="dialog" aria-modal="true" aria-labelledby="panel-activites-title" hidden>
     <div class="panel-bar">
@@ -464,15 +490,22 @@
       if (wasOpen) setTimeout(go, 80); else go();
     });
 
-    function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 24); }
+    var toTop = $('#to-top');
+    function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 24); toTop.classList.toggle('is-visible', window.scrollY > 700); }
     window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
     if (io) {
-      var links = $$('a[href^="#"]', nav);
+      var links = $$('a[href^="#"]', nav).concat($$('a[href^="#"]', $('#subnav')));
       var spy = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) {
           if (!e.isIntersecting) return;
-          links.forEach(function (a) { if (a.getAttribute('href') === '#' + e.target.id) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+          links.forEach(function (a) {
+            if (a.getAttribute('href') === '#' + e.target.id) {
+              a.setAttribute('aria-current', 'true');
+              var bar = a.closest('#subnav ul');
+              if (bar) bar.scrollTo({ left: a.offsetLeft - bar.clientWidth / 2 + a.clientWidth / 2, behavior: reduce ? 'auto' : 'smooth' });
+            } else a.removeAttribute('aria-current');
+          });
         });
       }, { rootMargin: '-45% 0px -50% 0px' });
       $$('main section[id]').forEach(function (s) { spy.observe(s); });
@@ -676,8 +709,8 @@
     var form = $('#adhesion-form'), loadedAt = Date.now(), turnstileToken = '', sending = false;
     var FIELDS = [
       ['nom', 'f-nom', 'e-nom'], ['postnom', 'f-postnom', 'e-postnom'], ['prenom', 'f-prenom', 'e-prenom'],
-      ['sexe', 'f-sexe', 'e-sexe'], ['telephone', 'f-telephone', 'e-telephone'], ['email', 'f-email', 'e-email'],
-      ['adresse', 'f-adresse', 'e-adresse'], ['type_membre', 'f-type', 'e-type'], ['age16', 'f-age', 'e-age'], ['consentement', 'f-consentement', 'e-consentement']
+      ['sexe', 'f-sexe', 'e-sexe'], ['profession', 'f-profession', 'e-profession'], ['telephone', 'f-telephone', 'e-telephone'], ['email', 'f-email', 'e-email'],
+      ['adresse', 'f-adresse', 'e-adresse'], ['type_membre', 'f-type', 'e-type'], ['cotisation', 'f-cotisation', 'e-cotisation'], ['age16', 'f-age', 'e-age'], ['consentement', 'f-consentement', 'e-consentement']
     ];
     function validPhone(v) {
       var s = v.replace(/[\s().-]/g, '');
@@ -687,11 +720,13 @@
       var v = el.type === 'checkbox' ? el.checked : el.value.trim();
       switch (name) {
         case 'nom': case 'postnom': case 'prenom': return /^[\p{L}][\p{L}' .-]+$/u.test(v) && v.length <= 80 ? '' : 'Saisissez au moins 2 lettres.';
+        case 'profession': return v.length >= 2 && v.length <= 100 ? '' : 'Indiquez votre profession.';
         case 'sexe': return v ? '' : 'Choisissez votre sexe.';
         case 'telephone': return validPhone(v) ? '' : 'Numéro invalide. Exemple : +243990000000 ou 0990000000.';
         case 'email': return !v || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v) ? '' : 'Adresse email invalide.';
         case 'adresse': return v.length >= 3 ? '' : 'Indiquez votre commune ou quartier.';
         case 'type_membre': return v ? '' : 'Choisissez un type de membre.';
+        case 'cotisation': return v ? '' : 'Indiquez votre réponse.';
         case 'age16': return v ? '' : 'Vous devez avoir au moins 16 ans pour adhérer.';
         case 'consentement': return v ? '' : 'Vous devez accepter pour adhérer.';
       }
@@ -735,8 +770,8 @@
 
     /* ---------- Formulaire en 3 étapes (plus court sur téléphone) ---------- */
     var steps = $$('.step', form), cur = 0;
-    var STEP_NAMES = ['Identité', 'Contact', 'Confirmation'];
-    var STEP_FIELDS = [['nom', 'postnom', 'prenom', 'sexe'], ['telephone', 'email', 'adresse'], ['type_membre', 'age16', 'consentement']];
+    var STEP_NAMES = ['Identité', 'Contact', 'Engagement'];
+    var STEP_FIELDS = [['nom', 'postnom', 'prenom', 'sexe', 'profession'], ['telephone', 'email', 'adresse'], ['type_membre', 'cotisation', 'age16', 'consentement']];
     var btnPrev = $('#step-prev'), btnNext = $('#step-next'), btnSubmit = $('#submit-btn');
     function showStep(i, focus) {
       cur = i;
@@ -780,7 +815,7 @@
       var payload = {
         nom: $('#f-nom').value, postnom: $('#f-postnom').value, prenom: $('#f-prenom').value,
         sexe: $('#f-sexe').value, telephone: $('#f-telephone').value, email: $('#f-email').value,
-        adresse: $('#f-adresse').value, type_membre: $('#f-type').value, consentement: 'oui',
+        adresse: $('#f-adresse').value, type_membre: $('#f-type').value, profession: $('#f-profession').value, cotisation_mensuelle: $('#f-cotisation').value, consentement: 'oui',
         website: $('#f-website').value, t: loadedAt, turnstile: turnstileToken
       };
       var ctl = new AbortController(), timer = setTimeout(function () { ctl.abort(); }, 20000);
